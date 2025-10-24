@@ -1,0 +1,87 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { projects } from '../../data/projects';
+---
+
+<Layout title="Projects - egyheppem">
+  <Header />
+  
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <div class="page-header animate-fade-in">
+          <h1 class="page-title">Project Gallery</h1>
+          <p class="page-description">Explore my complete portfolio of photography projects</p>
+        </div>
+
+        <div class="projects-grid">
+          {projects.map((project, index) => (
+            <div class={`animate-scale-in stagger-${(index % 6) + 1}`}>
+              <ProjectCard {...project} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Kosiba Zsófia. All rights reserved.</p>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .main {
+    padding-top: 80px;
+    min-height: 100vh;
+  }
+
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .page-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-description {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .footer {
+    padding: var(--spacing-xl) 0;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

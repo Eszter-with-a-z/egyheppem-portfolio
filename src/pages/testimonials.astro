@@ -1,0 +1,332 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import { testimonials } from '../data/projects';
+---
+
+<Layout title="Testimonials - egyheppem">
+  <Header />
+  
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <div class="page-header animate-fade-in">
+          <h1 class="page-title">Testimonials</h1>
+          <p class="page-description">What clients say about working with me</p>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="testimonial-slideshow animate-scale-in stagger-1">
+          {testimonials.map((testimonial, index) => (
+            <div class="testimonial-slide" data-index={index}>
+              <div class="testimonial-content">
+                <p class="testimonial-text">"{testimonial.content}"</p>
+                <div class="testimonial-author">
+                  <img src={testimonial.image || "/placeholder.svg"} alt={testimonial.name} class="author-image" />
+                  <div class="author-info">
+                    <h3 class="author-name">{testimonial.name}</h3>
+                    <p class="author-role">{testimonial.role}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+          
+          <div class="slideshow-controls">
+            <button class="control-btn prev-btn" aria-label="Previous testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div class="slideshow-dots"></div>
+            <button class="control-btn next-btn" aria-label="Next testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="testimonials-grid">
+          {testimonials.map((testimonial, index) => (
+            <div class={`testimonial-card animate-scale-in stagger-${(index % 6) + 2}`}>
+              <p class="testimonial-text">"{testimonial.content}"</p>
+              <div class="testimonial-author">
+                <img src={testimonial.image || "/placeholder.svg"} alt={testimonial.name} class="author-image" />
+                <div class="author-info">
+                  <h3 class="author-name">{testimonial.name}</h3>
+                  <p class="author-role">{testimonial.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Kosiba Zsófia. All rights reserved.</p>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .main {
+    padding-top: 80px;
+    min-height: 100vh;
+  }
+
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .page-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-description {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+  }
+
+  /* Slideshow */
+  .testimonial-slideshow {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto var(--spacing-2xl);
+    padding: var(--spacing-2xl);
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    min-height: 400px;
+  }
+
+  .testimonial-slide {
+    position: absolute;
+    inset: var(--spacing-2xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-slow);
+    pointer-events: none;
+  }
+
+  .testimonial-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .testimonial-content {
+    text-align: center;
+  }
+
+  .testimonial-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-xl);
+    font-style: italic;
+    color: var(--color-text);
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+
+  .author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .author-info {
+    text-align: left;
+  }
+
+  .author-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .author-role {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+  }
+
+  .slideshow-controls {
+    position: absolute;
+    bottom: var(--spacing-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .control-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    background: var(--color-surface-elevated);
+    border-radius: 50%;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .control-btn:hover {
+    background: var(--color-surface-hover);
+    transform: scale(1.1);
+  }
+
+  .slideshow-dots {
+    display: flex;
+    gap: var(--spacing-xs);
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-surface-elevated);
+    cursor: pointer;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .dot.active {
+    background: var(--color-primary);
+    transform: scale(1.2);
+  }
+
+  /* Grid */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .testimonial-card {
+    padding: var(--spacing-xl);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .testimonial-card .testimonial-text {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .testimonial-card .author-image {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer {
+    padding: var(--spacing-xl) 0;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .testimonial-slideshow {
+      padding: var(--spacing-lg);
+      min-height: 500px;
+    }
+
+    .testimonial-text {
+      font-size: 1.125rem;
+    }
+  }
+</style>
+
+<script>
+  // Slideshow functionality
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const dotsContainer = document.querySelector('.slideshow-dots');
+  
+  // Create dots
+  slides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.className = 'dot';
+    dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer?.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.dot');
+
+  function goToSlide(index: number) {
+    currentSlide = index;
+    updateSlideshow();
+  }
+
+  function updateSlideshow() {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === currentSlide);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentSlide);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlideshow();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlideshow();
+  }
+
+  // Initialize
+  if (slides.length > 0) {
+    updateSlideshow();
+    
+    // Auto-advance
+    setInterval(nextSlide, 5000);
+  }
+
+  // Event listeners
+  document.querySelector('.next-btn')?.addEventListener('click', nextSlide);
+  document.querySelector('.prev-btn')?.addEventListener('click', prevSlide);
+
+  // Keyboard controls
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prevSlide();
+    if (e.key === 'ArrowRight') nextSlide();
+  });
+</script>

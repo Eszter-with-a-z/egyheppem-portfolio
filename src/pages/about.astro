@@ -1,0 +1,185 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="About & Contact - egyheppem">
+  <Header />
+  
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text animate-fade-in">
+            <h1 class="page-title">About Me</h1>
+            <h2 class="name">Kosiba Zsófia</h2>
+            <div class="introduction">
+              <p>
+                I'm a passionate photographer dedicated to capturing the beauty and emotion in every moment. 
+                With years of experience across various photography styles, I bring a unique perspective to each project.
+              </p>
+              <p>
+                My work is driven by a love for storytelling through images, whether it's documenting life's most 
+                precious moments or creating compelling visual narratives for brands and businesses.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-image animate-scale-in stagger-1">
+            <img 
+              src="/placeholder.svg?height=600&width=500" 
+              alt="Kosiba Zsófia" 
+            />
+          </div>
+        </div>
+
+        <div class="contact-section animate-fade-in stagger-2">
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="contact-info">
+            <a href="mailto:hello@kosibazsófia.com" class="contact-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>hello@kosibazsófia.com</span>
+            </a>
+
+            <a href="https://instagram.com/egyheppem" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>@egyheppem</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Kosiba Zsófia. All rights reserved.</p>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .main {
+    padding-top: 80px;
+    min-height: 100vh;
+  }
+
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .page-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .introduction p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+  }
+
+  .about-image {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4 / 5;
+  }
+
+  .contact-section {
+    padding: var(--spacing-2xl);
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-xl);
+    background: var(--color-surface-elevated);
+    border-radius: var(--radius-md);
+    font-size: 1.125rem;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .contact-link:hover {
+    background: var(--color-surface-hover);
+    transform: translateY(-2px);
+  }
+
+  .contact-link svg {
+    color: var(--color-primary);
+  }
+
+  .footer {
+    padding: var(--spacing-xl) 0;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+
+    .about-image {
+      order: -1;
+    }
+  }
+</style>
