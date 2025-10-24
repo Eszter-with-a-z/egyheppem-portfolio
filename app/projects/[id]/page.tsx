@@ -1,6 +1,3 @@
-"use client"
-
-import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -161,10 +158,10 @@ const projects = [
   },
 ]
 
-export default function ProjectDetailPage({ params }: { params: { id: string } }) {
-  
+export default async function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
 
-  const project = projects.find((p) => p.id === Number.parseInt(params.id))
+  const project = projects.find((p) => p.id === Number.parseInt(id))
 
   if (!project) {
     notFound()
