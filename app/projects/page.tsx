@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/src/components/ui/button"
+import { Badge } from "@/src/components/ui/badge"
 import { ArrowLeft, ImageIcon } from "lucide-react"
 
 const categories = ["All", "Wedding", "Portrait", "Commercial", "Event", "Landscape", "Fashion"]

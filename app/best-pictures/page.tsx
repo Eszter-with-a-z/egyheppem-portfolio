@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/src/components/ui/button"
 import { ArrowLeft } from "lucide-react"
-import { GalleryModal } from "@/components/gallery-modal"
+import { GalleryModal } from "@/src/components/gallery-modal"
 
 const bestPictures = [
   {

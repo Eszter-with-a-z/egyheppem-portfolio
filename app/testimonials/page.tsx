@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/src/components/ui/button"
+import { Card, CardContent } from "@/src/components/ui/card"
 import { ArrowLeft, Star, Quote } from "lucide-react"
 
 const testimonials = [

@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { PageTransition } from "@/components/page-transition"
+import { PageTransition } from "@/src/components/page-transition"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })

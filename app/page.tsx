@@ -1,10 +1,10 @@
 "use client"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/src/components/ui/button"
+import { Card } from "@/src/components/ui/card"
+import { Badge } from "@/src/components/ui/badge"
 import { Camera, Award, Users, ArrowRight, ImageIcon } from "lucide-react"
-import { FeaturedSlideshow } from "@/components/featured-slideshow"
+import { FeaturedSlideshow } from "@/src/components/featured-slideshow"
 
 const featuredSlides = [
   {
