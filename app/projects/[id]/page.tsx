@@ -8,6 +8,7 @@ import { ArrowLeft, Calendar, Tag, ImageIcon } from "lucide-react"
 import { notFound } from "next/navigation"
 import { GalleryModal } from "@/components/gallery-modal"
 
+
 const projects = [
   {
     id: 1,
