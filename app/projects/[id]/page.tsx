@@ -7,7 +7,11 @@ import { notFound } from "next/navigation"
 import { ProjectGallery } from "@/src/components/project-gallery"
 import { projects } from "@/src/data/projects"
 
-
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id.toString(),
+  }))
+}
 
 export default async function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
