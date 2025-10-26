@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   
-  basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/egyheppem-portfolio' : '',
   
   eslint: {
     ignoreDuringBuilds: true,
