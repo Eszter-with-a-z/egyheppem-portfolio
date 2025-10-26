@@ -4,9 +4,9 @@ const nextConfig = {
   
   basePath: process.env.NODE_ENV === 'production' ? '/egyheppem-portfolio' : '',
   
-  eslint: {
+  /*eslint: {
     ignoreDuringBuilds: true,
-  },
+  },*/
   
   typescript: {
     ignoreBuildErrors: true,
