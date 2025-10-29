@@ -24,12 +24,7 @@ export interface BestPicture {
   projectId: string
 }
 
-export interface Testimonial {
-  id: string
-  name: string
-  text: string
-  role?: string
-}
+
 
 export const bestPictures: BestPicture[] = [
   {
@@ -191,90 +186,6 @@ export const projects: Project[] = [
           { length: 11 },
           (_, i) => `/placeholder.svg?height=800&width=600&query=winter fashion photo ${i + 1}`,
         ),
-      },
-    ],
-  },
-]
-
-export const testimonials: Testimonial[] = [
-  {
-    id: "1",
-    name: "Sarah Johnson",
-    role: "Bride",
-    text: "Kosiba captured our wedding day perfectly. Every photo tells a story and brings back beautiful memories. Her eye for detail is incredible!",
-  },
-  {
-    id: "2",
-    name: "Michael Chen",
-    role: "CEO, TechCorp",
-    text: "Professional, creative, and reliable. The corporate event photos exceeded our expectations. Highly recommended!",
-  },
-  {
-    id: "3",
-    name: "Emma Williams",
-    role: "Model",
-    text: "Working with Kosiba is always a pleasure. She knows how to make you feel comfortable and brings out the best in every shot.",
-  },
-  {
-    id: "4",
-    name: "David Martinez",
-    role: "Architect",
-    text: "The architectural photography series perfectly captured the essence of our designs. Stunning work!",
-  },
-  {
-    id: "5",
-    name: "Lisa Anderson",
-    role: "Fashion Designer",
-    text: "Kosiba's fashion editorial work is exceptional. She understands lighting, composition, and how to showcase clothing beautifully.",
-  },
-  {
-    id: "6",
-    name: "James Taylor",
-    role: "Groom",
-    text: "We couldn't be happier with our wedding photos. Kosiba was unobtrusive yet captured every important moment. True artistry!",
-  },
-]
-
-export const services = [
-  {
-    id: "1",
-    title: "Wedding Photography",
-    description:
-      "Comprehensive wedding coverage from preparation to reception, capturing every precious moment of your special day.",
-    exampleProjects: [
-      {
-        id: "wedding-1",
-        title: "Summer Wedding Collection",
-        imageCount: 24,
-        image: "/summer-wedding-photography.jpg",
-      },
-    ],
-  },
-  {
-    id: "2",
-    title: "Portrait Sessions",
-    description:
-      "Professional portrait photography for individuals, families, and corporate headshots in studio or outdoor settings.",
-    exampleProjects: [
-      {
-        id: "portraits-1",
-        title: "Portrait Sessions",
-        imageCount: 15,
-        image: "/professional-portrait.png",
-      },
-    ],
-  },
-  {
-    id: "3",
-    title: "Commercial & Events",
-    description:
-      "Corporate events, product photography, and commercial projects with professional quality and quick turnaround.",
-    exampleProjects: [
-      {
-        id: "events-1",
-        title: "Corporate Events",
-        imageCount: 16,
-        image: "/corporate-event-networking.png",
       },
     ],
   },

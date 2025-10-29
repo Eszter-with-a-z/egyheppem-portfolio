@@ -28,9 +28,7 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass-bg border-b border-border" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-5 transition-all duration-300 backdrop-blur-lg bg-white/80 border-b border-border`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -56,7 +54,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 hover:bg-secondary rounded-lg transition-colors"
+            className="cursor-pointer md:hidden p-2 hover:bg-secondary rounded-lg transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

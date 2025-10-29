@@ -57,24 +57,24 @@ export function FeaturedWorkSection() {
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-              <h3 className="text-2xl font-semibold">{bestPictures[currentIndex].title}</h3>
+              <h3 className="text-white text-2xl font-semibold">{bestPictures[currentIndex].title}</h3>
             </div>
           </div>
 
           <button
             onClick={handlePrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
+            className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors"
             aria-label="Previous image"
           >
-            <ChevronLeft size={24} />
+            <ChevronLeft color="white" size={24} />
           </button>
 
           <button
             onClick={handleNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
+            className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors"
             aria-label="Next image"
           >
-            <ChevronRight size={24} />
+            <ChevronRight color="white" size={24} />
           </button>
 
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
