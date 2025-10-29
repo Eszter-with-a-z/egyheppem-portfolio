@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
-import { services } from "@/lib/mock-data"
+import { services } from "@/lib/data-services"
 import { ProjectCard } from "@/components/project-card"
 
 export function ServicesSection() {

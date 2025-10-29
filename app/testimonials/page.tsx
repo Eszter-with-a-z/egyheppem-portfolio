@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
-import { testimonials } from "@/lib/mock-data"
+import { testimonials } from "@/lib/data-testimonials"
 
 export default function TestimonialsPage() {
   const [currentIndex, setCurrentIndex] = useState(0)
