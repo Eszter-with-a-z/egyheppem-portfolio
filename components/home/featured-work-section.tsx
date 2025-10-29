@@ -48,13 +48,22 @@ export function FeaturedWorkSection() {
             className="relative aspect-[3/2] rounded-lg overflow-hidden cursor-pointer group"
             onClick={handleImageClick}
           >
-            <Image
-              src={bestPictures[currentIndex].image || "/placeholder.svg"}
-              alt={bestPictures[currentIndex].title}
-              fill
-              className="object-cover transition-transform duration-700"
-              priority
-            />
+            <div className="relative w-full h-full">
+               {bestPictures.map((picture, index) => (
+                  <Image
+                  key={index}
+                    src={picture.image || "/placeholder.svg"}
+                    alt={picture.title}
+                    fill
+                    className={`object-cover transition-opacity duration-700 ease-in-out 
+                    ${index === currentIndex ? "opacity-100" : "opacity-0"}`}
+                    priority={index === currentIndex}
+                  />
+
+               ))}
+
+            </div>
+            
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
               <h3 className="text-white text-2xl font-semibold">{bestPictures[currentIndex].title}</h3>
