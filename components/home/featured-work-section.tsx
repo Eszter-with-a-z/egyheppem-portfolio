@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { bestPictures } from "@/lib/mock-data"
+import { bestPictures } from "@/lib/data-best-pictures"
 import { GalleryView } from "@/components/gallery-view"
 import { Button } from "@/components/ui/button"
 
