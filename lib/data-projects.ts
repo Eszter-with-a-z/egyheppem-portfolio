@@ -27,7 +27,7 @@ export const projects: Project[] = [
     title: "Esze Tamás zenekar a Művészetek Völgyén",
     year: 2025,
     imageCount: 3,
-    coverImage: `${CLOUDINARY_BASE_URL}/projects/esze-tamas/image-0.jpg`,
+    coverImage: `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-0.jpg`,
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
           { length: 3 },
