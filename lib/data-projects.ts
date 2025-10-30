@@ -23,7 +23,7 @@ export interface Subfolder {
 
 export const projects: Project[] = [
   {
-    id: "project-1",
+    id: "esze-tamas",
     title: "Esze Tamás zenekar a Művészetek Völgyén",
     year: 2025,
     imageCount: 3,
