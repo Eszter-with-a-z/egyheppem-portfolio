@@ -1,3 +1,5 @@
+const CLOUDINARY_BASE_URL = process.env.NEXT_PUBLIC_CLOUDINARY_URL!
+// https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio
 export interface Project {
   id: string
   title: string
@@ -22,10 +24,10 @@ export interface Subfolder {
 export const projects: Project[] = [
   {
     id: "project-1",
-    title: "Eszte Tamás zenekar a Művészetek Völgyén",
+    title: "Esze Tamás zenekar a Művészetek Völgyén",
     year: 2025,
     imageCount: 3,
-    coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-0.jpg",
+    coverImage: `${CLOUDINARY_BASE_URL}/projects/esze-tamas/image-0.jpg`,
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
           { length: 3 },
