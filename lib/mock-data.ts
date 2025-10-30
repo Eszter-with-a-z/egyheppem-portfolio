@@ -56,7 +56,7 @@ export const projects: Project[] = [
     title: "Modern Architecture Series",
     year: 2025,
     imageCount: 18,
-    coverImage: "/modern-architecture.png",
+    coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/v1761820908/ikdeur1gvgnuoeawab3u.jpg",
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
       { length: 18 },
