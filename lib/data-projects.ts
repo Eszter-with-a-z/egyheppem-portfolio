@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
           { length: 3 },
-          (_, i) => `${CLOUDINARY_BASE_URL}/projects/esze-tamas/image-${i}.jpg`,
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-${i}.jpg`,
         ),
   },
   /* Example of project with subfolder
