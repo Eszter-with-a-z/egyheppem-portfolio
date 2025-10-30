@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
           { length: 3 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-${i}.jpg`,
+          (_, i) => `${CLOUDINARY_BASE_URL}/projects/esze-tamas/image-${i}.jpg`,
         ),
   },
   /* Example of project with subfolder
@@ -67,18 +67,18 @@ export const projects: Project[] = [
     ],
   }, 
   end of example of project with subfolder*/
-  /* Example of single-folder project 
+  /* Example of project with a single folder
   {
-    id: "architecture-1",
-    title: "Modern Architecture Series",
+    id: "project-1",
+    title: "Esze Tamás zenekar a Művészetek Völgyén",
     year: 2025,
-    imageCount: 18,
-    coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/v1761820908/ikdeur1gvgnuoeawab3u.jpg",
+    imageCount: 3,
+    coverImage: `${CLOUDINARY_BASE_URL}/projects/esze-tamas/image-0.jpg`,
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
-      { length: 18 },
-      (_, i) => `/placeholder.svg?height=800&width=600&query=modern architecture photo ${i + 1}`,
-    ),
+          { length: 3 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-${i}.jpg`,
+        ),
   },
   End of example of single-folder project*/
   {
