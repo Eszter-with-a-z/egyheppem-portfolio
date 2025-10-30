@@ -1,4 +1,4 @@
-import { projects } from "@/lib/mock-data"
+import { projects } from "@/lib/data-projects"
 import { ProjectPageClient } from "./client"
 
 export function generateStaticParams() {

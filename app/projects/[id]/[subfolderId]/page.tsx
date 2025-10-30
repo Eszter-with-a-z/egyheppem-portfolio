@@ -1,5 +1,5 @@
 import SubfolderPageClient from "./page-client"
-import { projects } from "@/lib/mock-data"
+import { projects } from "@/lib/data-projects"
 
 export function generateStaticParams() {
   const params: { id: string; subfolderId: string }[] = []

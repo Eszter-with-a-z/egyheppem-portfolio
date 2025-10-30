@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { useParams, useRouter } from "next/navigation"
 import Image from "next/image"
 import { ArrowLeft } from "lucide-react"
-import { projects } from "@/lib/mock-data"
+import { projects } from "@/lib/data-projects"
 import { GalleryView } from "@/components/gallery-view"
 import { Button } from "@/components/ui/button"
 

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { projects } from "@/lib/mock-data"
+import { projects } from "@/lib/data-projects"
 import { ProjectCard } from "@/components/project-card"
 import { Button } from "@/components/ui/button"
 import { ChevronRight } from "lucide-react"

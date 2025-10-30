@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
-import { projects } from "@/lib/mock-data"
+import { projects } from "@/lib/data-projects"
 import { ProjectCard } from "@/components/project-card"
 
 export default function ProjectsPage() {
