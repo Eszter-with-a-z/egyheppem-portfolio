@@ -21,6 +21,19 @@ export interface Subfolder {
 
 export const projects: Project[] = [
   {
+    id: "project-1",
+    title: "Eszte Tamás zenekar a Művészetek Völgyén",
+    year: 2025,
+    imageCount: 3,
+    coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-0.jpg",
+    description: "Exploring lines, shapes, and light in contemporary architecture.",
+    images: Array.from(
+          { length: 3 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-${i}.jpg`,
+        ),
+  },
+  /* Example of project with subfolder
+  {
     id: "wedding-1",
     title: "Summer Wedding Collection",
     year: 2025,
@@ -50,7 +63,9 @@ export const projects: Project[] = [
         ),
       },
     ],
-  },
+  }, 
+  end of example of project with subfolder*/
+  /* Example of single-folder project 
   {
     id: "architecture-1",
     title: "Modern Architecture Series",
@@ -63,6 +78,7 @@ export const projects: Project[] = [
       (_, i) => `/placeholder.svg?height=800&width=600&query=modern architecture photo ${i + 1}`,
     ),
   },
+  End of example of single-folder project*/
   {
     id: "portraits-1",
     title: "Portrait Sessions",
