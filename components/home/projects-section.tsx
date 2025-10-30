@@ -15,6 +15,7 @@ export function ProjectsSection() {
             <ProjectCard
               key={project.id}
               id={project.id}
+              year={project.year}
               title={project.title}
               imageCount={project.imageCount}
               coverImage={project.coverImage}

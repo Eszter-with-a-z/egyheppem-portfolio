@@ -1,6 +1,7 @@
 export interface Project {
   id: string
   title: string
+  year:number
   imageCount: number
   coverImage: string
   description: string
@@ -22,6 +23,7 @@ export const projects: Project[] = [
   {
     id: "wedding-1",
     title: "Summer Wedding Collection",
+    year: 2025,
     imageCount: 24,
     coverImage: "/summer-wedding-photography.jpg",
     description: "A beautiful summer wedding capturing love and joy in every moment.",
@@ -52,6 +54,7 @@ export const projects: Project[] = [
   {
     id: "architecture-1",
     title: "Modern Architecture Series",
+    year: 2025,
     imageCount: 18,
     coverImage: "/modern-architecture.png",
     description: "Exploring lines, shapes, and light in contemporary architecture.",
@@ -63,6 +66,7 @@ export const projects: Project[] = [
   {
     id: "portraits-1",
     title: "Portrait Sessions",
+    year: 2025,
     imageCount: 15,
     coverImage: "/professional-portrait.png",
     description: "Capturing personality and emotion through intimate portrait sessions.",
@@ -93,6 +97,7 @@ export const projects: Project[] = [
   {
     id: "nature-1",
     title: "Nature & Landscapes",
+    year: 2025,
     imageCount: 20,
     coverImage: "/serene-forest-stream.png",
     description: "The beauty of nature captured in stunning landscapes.",
@@ -104,6 +109,7 @@ export const projects: Project[] = [
   {
     id: "events-1",
     title: "Corporate Events",
+    year: 2025,
     imageCount: 16,
     coverImage: "/corporate-event-networking.png",
     description: "Professional coverage of corporate events and conferences.",
@@ -115,6 +121,7 @@ export const projects: Project[] = [
   {
     id: "fashion-1",
     title: "Fashion Editorial",
+    year: 2025,
     imageCount: 22,
     coverImage: "/fashion-editorial-photography.jpg",
     description: "Bold and creative fashion photography for editorial projects.",

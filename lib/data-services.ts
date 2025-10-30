@@ -8,6 +8,7 @@ export const services = [
       {
         id: "wedding-1",
         title: "Summer Wedding Collection",
+        year: 2025,
         imageCount: 24,
         image: "/summer-wedding-photography.jpg",
       },
@@ -22,6 +23,7 @@ export const services = [
       {
         id: "portraits-1",
         title: "Portrait Sessions",
+        year: 2025,
         imageCount: 15,
         image: "/professional-portrait.png",
       },
@@ -36,6 +38,7 @@ export const services = [
       {
         id: "events-1",
         title: "Corporate Events",
+        year: 2025,
         imageCount: 16,
         image: "/corporate-event-networking.png",
       },

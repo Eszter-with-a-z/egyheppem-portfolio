@@ -7,12 +7,13 @@ import { Folder } from "lucide-react"
 interface ProjectCardProps {
   id: string
   title: string
+  year:number
   imageCount: number
   coverImage: string
   href: string
 }
 
-export function ProjectCard({ id, title, imageCount, coverImage, href }: ProjectCardProps) {
+export function ProjectCard({ id, title, year, imageCount, coverImage, href }: ProjectCardProps) {
   return (
     <Link
       href={href}
@@ -32,7 +33,8 @@ export function ProjectCard({ id, title, imageCount, coverImage, href }: Project
           <Folder size={16} className="text-primary" />
           <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">{title}</h3>
         </div>
-        <p className="text-sm text-muted-foreground">{imageCount} images</p>
+        <p className="text-sm text-muted-foreground">{imageCount} images | {year}</p>
+        
       </div>
     </Link>
   )

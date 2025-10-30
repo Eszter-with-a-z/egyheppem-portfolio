@@ -39,6 +39,7 @@ export function ServicesSection() {
                         key={project.id}
                         id={project.id}
                         title={project.title}
+                        year={project.year}
                         imageCount={project.imageCount}
                         coverImage={project.image}
                         href={`/projects/${project.id}`}

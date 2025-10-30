@@ -72,7 +72,7 @@ export function ProjectPageClient() {
 
             <div className="max-w-3xl">
               <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-fade-in-up">{project.title}</h1>
-              <p className="text-lg text-muted-foreground mb-2">{project.imageCount} images</p>
+              <p className="text-lg text-muted-foreground mb-2">{project.imageCount} images | {project.year}</p>
               <p className="text-muted-foreground">{project.description}</p>
             </div>
           </div>

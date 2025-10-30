@@ -20,6 +20,7 @@ export default function ProjectsPage() {
               key={project.id}
               id={project.id}
               title={project.title}
+              year={project.year}
               imageCount={project.imageCount}
               coverImage={project.coverImage}
               href={`/projects/${project.id}`}
