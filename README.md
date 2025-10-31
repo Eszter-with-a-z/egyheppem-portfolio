@@ -1,4 +1,4 @@
-Portfolio for my amazing friend and photographer, Zsófi!
+[Portfolio](https://eszter-with-a-z.github.io/egyheppem-portfolio/projects/) for my amazing friend and photographer, Zsófi!
 
 ## Instructions
 ### Before any changes
