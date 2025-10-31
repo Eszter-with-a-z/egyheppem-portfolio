@@ -26,12 +26,12 @@ export const projects: Project[] = [
     id: "esze-tamas",
     title: "Esze Tamás zenekar a Művészetek Völgyén",
     year: 2025,
-    imageCount: 3,
-    coverImage: `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-0.jpg`,
+    imageCount: 143,
+    coverImage: `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-142.jpg`,
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
-          { length: 3 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-${i}.jpg`,
+          { length: 143 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-${i}.jpg`,
         ),
   },
   /* Example of project with subfolder
