@@ -44,11 +44,11 @@ export default function SubfolderPageClient() {
     <main className="min-h-screen pt-24 pb-20">
       <div
         className={`${
-          isSticky ? "fixed top-16 left-0 right-0 glass-bg border-b border-border z-40" : "relative"
+          isSticky ? "fixed top-16 left-0 right-0 bg-transparent  border-border z-40" : "relative"
         } transition-all duration-300`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Button variant="ghost" onClick={() => router.push(`/projects/${project.id}`)} className="group">
+          <Button variant="ghost" onClick={() => router.push(`/projects/${project.id}`)} className=" bg-white group">
             <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
             Back to {project.title}
           </Button>

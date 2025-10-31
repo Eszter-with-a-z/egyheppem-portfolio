@@ -22,16 +22,79 @@ export interface Subfolder {
 
 
 export const projects: Project[] = [
+    {
+    id: "bankito",
+    title: "Bánkitó",
+    year: 2025,
+    imageCount: 24,
+    coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932079/portfolio/projects/bankito/nap-0/nap-0-10.jpg",
+    description: "xxx",
+    hasSubfolders: true,
+    subfolders: [
+      {
+        id: "nap-0",
+        title: "0. nap",
+        imageCount: 18,
+        coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932117/portfolio/projects/bankito/nap-0/nap-0-4.jpg",
+        images: Array.from(
+          { length: 18 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761923387/portfolio/projects/bankito/nap-0/nap-0-${i}.jpg`,
+        ),
+      },
+      {
+        id: "nap-1",
+        title: "1. nap",
+        imageCount: 167,
+        coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761936185/portfolio/projects/bankito/nap-1/nap-1_125.jpg",
+        images: Array.from(
+          { length: 166 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761936185/portfolio/projects/bankito/nap-1/nap-1_${i + 1}.jpg`,
+        ),
+      },
+      {
+        id: "nap-2",
+        title: "2. nap",
+        imageCount: 86,
+        coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761939495/portfolio/projects/bankito/nap-2/nap-2_83.jpg",
+        images: Array.from(
+          { length: 85 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761939495/portfolio/projects/bankito/nap-2/nap-2_${i + 1}.jpg`,
+        ),
+      },
+      {
+        id: "nap-3",
+        title: "3. nap",
+        imageCount: 141,
+        coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761940456/portfolio/projects/bankito/nap-3/nap-3_124.jpg",
+        images: Array.from(
+          { length: 140 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761939495/portfolio/projects/bankito/nap-3/nap-3_${i + 1}.jpg`,
+        ),
+      },
+    ],
+  }, 
   {
     id: "esze-tamas",
     title: "Esze Tamás zenekar a Művészetek Völgyén",
     year: 2025,
-    imageCount: 143,
+    imageCount: 144,
     coverImage: `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-142.jpg`,
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
           { length: 143 },
           (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-${i}.jpg`,
+        ),
+  },
+    {
+    id: "schichederek",
+    title: "Schichederek az A38-on",
+    year: 2025,
+    imageCount: 101,
+    coverImage: `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932055/portfolio/projects/schichederek/kosibazsofi_20251005_Schihederek_98.jpg`,
+    description: "Exploring lines, shapes, and light in contemporary architecture.",
+    images: Array.from(
+          { length: 101 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932055/portfolio/projects/schichederek/kosibazsofi_20251005_Schihederek_${i+1}.jpg`,
         ),
   },
   /* Example of project with subfolder
@@ -66,18 +129,18 @@ export const projects: Project[] = [
       },
     ],
   }, 
-  end of example of project with subfolder*/
+  /*end of example of project with subfolder*/
   /* Example of project with a single folder
   {
-    id: "project-1",
+    id: "esze-tamas",
     title: "Esze Tamás zenekar a Művészetek Völgyén",
     year: 2025,
-    imageCount: 3,
-    coverImage: `${CLOUDINARY_BASE_URL}/projects/esze-tamas/image-0.jpg`,
+    imageCount: 143,
+    coverImage: `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-142.jpg`,
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
-          { length: 3 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio/projects/esze-tamas/image-${i}.jpg`,
+          { length: 143 },
+          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-${i}.jpg`,
         ),
   },
   End of example of single-folder project*/
