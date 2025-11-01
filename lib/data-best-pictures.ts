@@ -13,7 +13,7 @@ export const bestPictures: BestPicture[] = Array.from({ length: TOTAL_IMAGES }, 
   const id = (i + 1).toString()
   return {
     id,
-    title: `Best Picture ${id}`, // or replace dynamically from another list
+    title: `Kedvenc képeim válogatás, ${id}. kép`,
     image: `${CLOUDINARY_BASE}/best-picture_${id}.jpg`
   }
 })

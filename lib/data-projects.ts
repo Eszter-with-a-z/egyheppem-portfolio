@@ -1,5 +1,4 @@
-const CLOUDINARY_BASE_URL = process.env.NEXT_PUBLIC_CLOUDINARY_URL!
-// https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761845287/portfolio
+
 export interface Project {
   id: string
   title: string
@@ -108,8 +107,8 @@ export const projects: Project[] = [
     title: Esze Tamás zenekar a Művészetek Völgyén", //REPLACE WITH any string you want to see on your page
     year: 2025, //REPLACE WITH number
     imageCount: 24, //REPLACE WITH number
-    coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-142.jpg",
-    // ^^ REPLACE WITH cloudinary URL !IMPORTANT add q_auto,f_auto/ between upload/ and v17XX in the URL for faster loading
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_4.jpg`,
+    // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
     description: "xxx", //REPLACE WITH any short desciption you want on your page
     hasSubfolders: true,
     subfolders: [
@@ -118,16 +117,15 @@ export const projects: Project[] = [
         id: "nap-0", // REPLACE WITH hyphen-seperated-no-accent-chars-lowercase
         title: "0. nap", //REPLACE WITH any string you want to see on your page
         imageCount: 12, //REPLACE WITH number
-        coverImage: "/example.png",
-        // ^^ REPLACE WITH cloudinary URL !IMPORTANT add q_auto,f_auto/ between upload/ and v17XX in the URL for faster loading
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/example.png`,
+        // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
         images: Array.from(
           { length: 12 }, //REPLACE WITH number - same az imageCount
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-${i+1}.jpg`,
-                    // (1) ^^^^ REPLACE WITH cloudinary URL of any image from the folder
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i+1}.jpg`,
+                    // (1) // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
                     // (2) Replace the last digits of the file name
-                          //  with ${i+1}, if the numbering in File Names starts with 1, 
+                          // with ${i+1}, if the numbering in File Names starts with 1, 
                           // and ${i} if it starts with 0
-                    // (3) add q_auto,f_auto/ between upload/ and v17XX in the URL for faster loading
         ),
       },
       // End of Subfolder Template
@@ -144,12 +142,11 @@ export const projects: Project[] = [
     title: Esze Tamás zenekar a Művészetek Völgyén egy mappában", //REPLACE WITH any string you want to see on your page
     year: 2025, //REPLACE WITH number
     imageCount: 24, //REPLACE WITH number
-    coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-142.jpg",
-    // ^^ REPLACE WITH cloudinary URL !IMPORTANT add q_auto,f_auto/ between upload/ and v17XX in the URL for faster loading
-    images: Array.from(
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/project-name/example.png`,
+        // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
+        images: Array.from(
           { length: 143 }, //REPLACE WITH number - same az imageCount
-          //  IMPORTANT! Remember that i is [0; lenght[ so add 1 to length if your numbering starts from 1 in the file names
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-${i+1}.jpg`,
+          (_, i) => ``${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i+1}.jpg`,
                     // (1) ^^^^ REPLACE WITH cloudinary URL of any image from the folder
                     // (2) Replace the last digits of the file name
                           //  with ${i+1}, if the numbering in File Names starts with 1, 
