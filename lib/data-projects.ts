@@ -19,7 +19,7 @@ export interface Subfolder {
   coverImage: string
   images: string[]
 }
-
+ const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932079/portfolio/projects"
 
 export const projects: Project[] = [
     {
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     title: "Bánkitó",
     year: 2025,
     imageCount: 24,
-    coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932079/portfolio/projects/bankito/nap-0/nap-0-10.jpg",
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-0/nap-0-10.jpg`,
     description: "xxx",
     hasSubfolders: true,
     subfolders: [
@@ -35,40 +35,40 @@ export const projects: Project[] = [
         id: "nap-0",
         title: "0. nap",
         imageCount: 18,
-        coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932117/portfolio/projects/bankito/nap-0/nap-0-4.jpg",
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-0/nap-0-4.jpg`,
         images: Array.from(
           { length: 18 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761923387/portfolio/projects/bankito/nap-0/nap-0-${i}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-0/nap-0-${i}.jpg`,
         ),
       },
       {
         id: "nap-1",
         title: "1. nap",
         imageCount: 167,
-        coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761936185/portfolio/projects/bankito/nap-1/nap-1_125.jpg",
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-1/nap-1_125.jpg`,
         images: Array.from(
           { length: 167 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761936185/portfolio/projects/bankito/nap-1/nap-1_${i + 1}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-1/nap-1_${i + 1}.jpg`,
         ),
       },
       {
         id: "nap-2",
         title: "2. nap",
         imageCount: 86,
-        coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761939495/portfolio/projects/bankito/nap-2/nap-2_83.jpg",
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-2/nap-2_83.jpg`,
         images: Array.from(
           { length: 86 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761939495/portfolio/projects/bankito/nap-2/nap-2_${i + 1}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-2/nap-2_${i + 1}.jpg`,
         ),
       },
       {
         id: "nap-3",
         title: "3. nap",
         imageCount: 141,
-        coverImage: "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761940456/portfolio/projects/bankito/nap-3/nap-3_124.jpg",
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-3/nap-3_124.jpg`,
         images: Array.from(
           { length: 141 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761939495/portfolio/projects/bankito/nap-3/nap-3_${i + 1}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-3/nap-3_${i + 1}.jpg`,
         ),
       },
     ],
@@ -78,11 +78,11 @@ export const projects: Project[] = [
     title: "Esze Tamás zenekar a Művészetek Völgyén",
     year: 2025,
     imageCount: 144,
-    coverImage: `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-142.jpg`,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-142.jpg`,
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
           { length: 143 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761922505/portfolio/projects/esze-tamas/muvvolgy_2025_07_18-${i}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i}.jpg`,
         ),
   },
     {
@@ -90,11 +90,11 @@ export const projects: Project[] = [
     title: "Schichederek az A38-on",
     year: 2025,
     imageCount: 101,
-    coverImage: `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932055/portfolio/projects/schichederek/kosibazsofi_20251005_Schihederek_98.jpg`,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_98.jpg`,
     description: "Exploring lines, shapes, and light in contemporary architecture.",
     images: Array.from(
           { length: 101 },
-          (_, i) => `https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932055/portfolio/projects/schichederek/kosibazsofi_20251005_Schihederek_${i+1}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_${i+1}.jpg`,
         ),
   },// End of project
   //PASTE THE NEW PROJECT HERE
