@@ -9,7 +9,7 @@ export function ServicesSection() {
   const [openService, setOpenService] = useState<string | null>(null)
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+    <section className="bg-background py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
       <div className="container mx-auto">
         <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">Services</h2>
 

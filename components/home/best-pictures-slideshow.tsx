@@ -23,8 +23,9 @@ export function BestPictureSlideshow() {
 
 
   return (
-    <section >
-      <div className="container  mx-auto">
+          
+    <section className=" sticky  inset-0 w-fill h-screen overflow-hidden">
+      <div className="container  ">
         <div className="relative w-screen  mb-8">
           
             <div className="relative w-screen h-screen">
@@ -42,18 +43,7 @@ export function BestPictureSlideshow() {
                ))}
 
             </div>
-            
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-              <h3 className="text-white text-2xl font-semibold">{bestPictures[currentIndex].title}</h3>
-            </div>
-          
-
-          
-          
         </div>
-
-        
       </div>
 
       {galleryOpen && (
