@@ -3,6 +3,7 @@
 import { useEffect } from "react"
 import { Mail, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ChatIntro } from "@/components/chat-intro"
 
 export default function AboutPage() {
   useEffect(() => {
@@ -13,9 +14,8 @@ export default function AboutPage() {
     <main className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-4xl">
         <h1 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">About & Contact</h1>
-
+        < ChatIntro />
         <div className="bg-card rounded-lg p-8 sm:p-12 animate-scale-in">
-          <h2 className="text-3xl font-bold mb-4">Kosiba Zsófia</h2>
 
           <div className="prose prose-invert max-w-none mb-8">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
