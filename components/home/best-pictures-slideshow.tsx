@@ -73,10 +73,10 @@ export function BestPictureSlideshow() {
                   />
 
                ))}
-              {/* 👇 Overlay that fades away on scroll */}
+              {/* Overlay that fades away on scroll */}
               <div
                 className={`absolute inset-0 transition-colors duration-700 ease-in-out
-                  ${scrolled ? "bg-black/0" : "bg-black/0"}`}
+                  ${scrolled ? "bg-black/0" : "bg-black/30"}`}
               />
             </div>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
@@ -104,8 +104,9 @@ export function BestPictureSlideshow() {
         >
           <ChevronRight color="white" size={24} />
         </button>
-
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        
+        {/* Little dots*/}
+        <div className={scrolled ?" opacity-100 duration-700 ease-in-out absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2": "opacity-0"}>
           {bestPictures.map((_, index) => (
             <button
               key={index}
