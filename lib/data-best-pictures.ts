@@ -2,6 +2,7 @@ export interface BestPicture {
   id: string
   title: string
   image: string
+  projectId: string
 }
 
 const CLOUDINARY_BASE = 
@@ -14,6 +15,7 @@ export const bestPictures: BestPicture[] = Array.from({ length: TOTAL_IMAGES }, 
   return {
     id,
     title: `Kedvenc képeim válogatás, ${id}. kép`,
-    image: `${CLOUDINARY_BASE}/best-picture_${id}.jpg`
+    image: `${CLOUDINARY_BASE}/best-picture_${id}.jpg`,
+    projectId:`best-picture-${id}`
   }
 })
