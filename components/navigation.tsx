@@ -4,6 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import { ProfilePicture } from "./profile-img"
 
 export function Navigation() {
   const pathname = usePathname()
@@ -32,8 +33,17 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold tracking-tight hover:text-primary transition-colors">
-            egyheppem
+          <Link href="/" className=" flex text-xl font-bold tracking-tight hover:text-primary transition-colors">
+            <ProfilePicture size={30}/>
+            <div
+                className="rounded-full px-3 py-1 m-1  shadow-lg
+                  bg-teal-400  rounded-full rounded-tl-md "
+             >
+                 <p className="text-base font-bold">
+                    egyheppem
+                 </p>
+                 
+              </div>
           </Link>
 
           {/* Desktop Navigation */}

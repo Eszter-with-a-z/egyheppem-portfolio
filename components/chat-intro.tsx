@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { Title } from "./title-section"
-import Image from "next/image"
+import { ProfilePicture } from "./profile-img"
+
 
 export function ChatIntro() {
   const [isVisible, setIsVisible] = useState(false)
@@ -15,7 +16,8 @@ export function ChatIntro() {
     { sender: "photographer", text: "fenomenológia" },
     { sender: "photographer", text: "Még nem tudom, ezek is most jutottak eszembe" },
     { sender: "photographer", text: "egyheppem" },
-    { sender: "friend", text: "Uuu ez jó" },
+    { sender: "friend", text: "ez eleg jo" },
+    { sender: "friend", text: "legyen ez" },
   ]
 
   useEffect(() => {
@@ -53,22 +55,16 @@ export function ChatIntro() {
               <div
                 className={`rounded-3xl px-6 py-2 m-1 max-w-xs shadow-lg ${
                   isPhotographer
-                    ?"bg-emerald-400 text-slate-900 rounded-tr-lg"     
+                    ?"bg-teal-400 text-slate-900 rounded-full "     
                     : "bg-slate-700 text-slate-50 rounded-bl-lg"
-                } ${isMessageTitle ? "mr-0":"mr-13"}`}
+                } ${isMessageTitle ? "mr-0 rounded-tr-md ":"mr-13 rounded-full"}`}
               >
                  <p className="text-lg font-medium text-left">{message.text}</p>
               </div>
 
                 {isPhotographer && isMessageTitle &&(
                 <div className="flex-shrink-0">
-                  <Image
-                    src="/profile.png"
-                    alt="Photographer"
-                    width={40}
-                    height={40}
-                    className="rounded-full"
-                  />
+                  <ProfilePicture size={40}/>
                 </div>
               )}
 
