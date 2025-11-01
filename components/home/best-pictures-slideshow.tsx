@@ -12,8 +12,15 @@ import { Button } from "@/components/ui/button"
 
 export function BestPictureSlideshow() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [scrolled, setScrolled] = useState(false)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
   const [galleryOpen, setGalleryOpen] = useState(false)
+
+  useEffect(() => {
+  const handleScroll = () => setScrolled(window.scrollY > 50)
+  window.addEventListener("scroll", handleScroll)
+  return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   useEffect(() => {
     if (!isAutoPlaying || galleryOpen) return
@@ -24,6 +31,8 @@ export function BestPictureSlideshow() {
 
     return () => clearInterval(interval)
   }, [isAutoPlaying, galleryOpen])
+
+  
 
   const handlePrevious = () => {
     setIsAutoPlaying(false)
@@ -36,8 +45,11 @@ export function BestPictureSlideshow() {
   }
 
   const handleImageClick = () => {
-    setIsAutoPlaying(false)
-    setGalleryOpen(true)
+    if (scrolled){
+      setIsAutoPlaying(false)
+      setGalleryOpen(true)
+    }
+      
   }
 
   return (
@@ -61,10 +73,15 @@ export function BestPictureSlideshow() {
                   />
 
                ))}
-
+              {/* 👇 Overlay that fades away on scroll */}
+              <div
+                className={`absolute inset-0 transition-colors duration-700 ease-in-out
+                  ${scrolled ? "bg-black/0" : "bg-black/0"}`}
+              />
             </div>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-            <div className="absolute bottom-0 left-0 right-0 p-10 bg-gradient-to-t from-black/80 to-transparent">
+            <div className=
+            {scrolled ?" opacity-100 duration-700 ease-in-out absolute bg-transparent bottom-0 left-0 right-0 p-10 bg-black/20":"opacity-0 "} >
               <h3 className="text-white  text-2xl font-semibold">{bestPictures[currentIndex].title}</h3>
             </div>
           
@@ -72,14 +89,17 @@ export function BestPictureSlideshow() {
       
         <button
           onClick={handlePrevious}
-          className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors"
+          className=
+          {scrolled ?" opacity-100 duration-700 ease-in-out absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
           aria-label="Previous image"
         >
           <ChevronLeft color="white" size={24} />
         </button>
         <button
           onClick={handleNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors"
+          className=
+          {scrolled ?" opacity-100 duration-700 ease-in-out absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
+
           aria-label="Next image"
         >
           <ChevronRight color="white" size={24} />
@@ -102,12 +122,7 @@ export function BestPictureSlideshow() {
         </div>
       </div>
       <div className="text-center">
-        <Button asChild size="lg" className="group">
-          <Link href="/best-pictures">
-            View All Best Pictures
-            <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-          </Link>
-        </Button>
+
       </div>
       {galleryOpen && (
         <GalleryView
