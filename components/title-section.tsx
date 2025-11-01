@@ -11,7 +11,7 @@ export function Title() {
     return (
         <div className="mt-6 ">
             <h2
-                className={`text-5xl sm:text-2xl md:text-3xl font-light mb-4 text-white transition-all duration-1000 ${
+                className={`text-5xl text-right sm:text-2xl md:text-3xl font-light mb-4 text-white transition-all duration-1000 ${
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{ transitionDelay: "300ms" }}
@@ -21,7 +21,7 @@ export function Title() {
             <div className="flex">
             <div
                 className="rounded-3xl px-6 py-2 m-1  shadow-lg
-                  bg-teal-400 text-slate-900 rounded-full rounded-br-md mr-0"
+                  bg-teal-400 text-slate-900 rounded-full rounded-tr-md mr-0"
              >
                  <p className="text-6xl font-bold  mb-4">
                     egyheppem

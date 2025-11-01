@@ -29,7 +29,7 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-5 transition-all duration-300 backdrop-blur-lg bg-white/80 border-b border-border`}
+      className={`fixed top-0 left-0 right-0 z-5 transition-all duration-300 backdrop-blur-lg`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -52,7 +52,7 @@ export function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm bg-white font-medium transition-colors hover:text-primary ${
                   pathname === link.href ? "text-primary" : "text-muted-foreground"
                 }`}
               >
