@@ -39,7 +39,7 @@ export function Navigation() {
                 className="rounded-full px-3 py-1 m-1  shadow-lg
                   bg-teal-400  rounded-full rounded-tl-md "
              >
-                 <p className="text-base font-bold">
+                 <p className="text-base font-light">
                     egyheppem
                  </p>
                  
@@ -47,12 +47,12 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm bg-white font-medium transition-colors hover:text-primary ${
+                className={`text-sm bg-white py-2 px-4 rounded-full font-medium transition-colors hover:text-primary ${
                   pathname === link.href ? "text-primary" : "text-muted-foreground"
                 }`}
               >

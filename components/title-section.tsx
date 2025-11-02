@@ -23,7 +23,7 @@ export function Title() {
                 className="rounded-3xl px-6 py-2 m-1  shadow-lg
                   bg-teal-400 text-slate-900 rounded-full rounded-tr-md mr-0"
              >
-                 <p className="text-6xl font-bold  mb-4">
+                 <p className="text-6xl font-light  mb-4">
                     egyheppem
                  </p>
                  
