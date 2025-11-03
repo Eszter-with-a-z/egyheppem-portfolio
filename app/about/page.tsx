@@ -1,7 +1,9 @@
 "use client"
 
 import { useEffect } from "react"
-import { Mail, Instagram } from "lucide-react"
+import { Mail, Instagram, Facebook } from "lucide-react"
+
+import { Title } from "@/components/title-section"
 import { Button } from "@/components/ui/button"
 import { ChatIntro } from "@/components/chat-intro"
 
@@ -13,8 +15,13 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-4xl">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">About & Contact</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold  text-center animate-fade-in-up">
+          Rólam & Kontakt
+        </h1>
         < ChatIntro />
+        <div className="max-w-sm mx-auto">
+          <Title color="black"/>
+        </div>
         <div className="bg-card rounded-lg p-8 sm:p-12 animate-scale-in">
 
           <div className="prose prose-invert max-w-none mb-8">
@@ -47,6 +54,18 @@ export default function AboutPage() {
                 className="text-lg hover:text-primary transition-colors"
               >
                 @egyheppem
+              </a>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <Facebook className="text-primary" size={24} />
+              <a
+                href="https://www.facebook.com/zsofi.kosiba"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg hover:text-primary transition-colors"
+              >
+                Kosiba Zsófi
               </a>
             </div>
           </div>

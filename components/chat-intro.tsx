@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Title } from "./title-section"
 import { ProfilePicture } from "./profile-img"
 
 
@@ -33,7 +32,7 @@ export function ChatIntro() {
   }, [])
 
   return (
-    <section className="relative mt-6 min-h-screen flex items-center justify-center ">
+    <section className="relative min-h-screen flex items-center justify-center ">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
       <div className="relative z-4 text-center max-w-4xl mx-auto">
         
@@ -55,11 +54,11 @@ export function ChatIntro() {
               <div
                 className={`rounded-3xl px-6 py-2 m-1 max-w-xs shadow-lg ${
                   isPhotographer
-                    ?"bg-teal-400 text-slate-900 rounded-full "     
+                    ?"bg-accent text-slate-900 rounded-full "     
                     : "bg-slate-700 text-slate-50 rounded-bl-lg"
                 } ${isMessageTitle ? "mr-0 rounded-tr-md ":"mr-13 rounded-full"}`}
               >
-                 <p className="text-lg font-medium text-left">{message.text}</p>
+                 <p className="text-lg font-light text-left">{message.text}</p>
               </div>
 
                 {isPhotographer && isMessageTitle &&(
@@ -70,7 +69,6 @@ export function ChatIntro() {
 
             </div>
           )})}
-        <Title/>
       </div>
     </section>
   )
