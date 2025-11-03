@@ -64,7 +64,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="cursor-pointer  bg-white rounded-full md:hidden p-2 hover:bg-accent rounded-lg transition-colors"
+            className="cursor-pointer  bg-white rounded-full md:hidden p-2 hover:bg-black hover:text-white rounded-lg transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -72,7 +72,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 ml-8 animate-fade-in bg-accent py-2 px-4 rounded-3xl rounded-tl-xs shadow-lg">
+          <div className="md:hidden py-4 ml-8 animate-fade-in bg-white py-2 px-4 rounded-3xl rounded-tl-xs shadow-lg">
             {links.map((link) => (
               <Link
                 key={link.href}
