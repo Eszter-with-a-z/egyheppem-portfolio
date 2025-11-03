@@ -21,7 +21,7 @@ export function Title() {
             <div className="flex">
             <div
                 className="rounded-3xl px-6 py-2 m-1  shadow-lg
-                  bg-teal-400 text-slate-900 rounded-full rounded-tr-md mr-0"
+                  bg-accent text-slate-900 rounded-full rounded-tr-md mr-0"
              >
                  <p className="text-6xl font-light  mb-4">
                     egyheppem
