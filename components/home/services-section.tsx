@@ -17,11 +17,11 @@ export function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="border border-border rounded-lg overflow-hidden bg-card transition-all duration-300 hover:border-primary/50"
+              className=" border border-border rounded-lg overflow-hidden bg-card transition-all duration-300 hover:border-primary/50"
             >
               <button
                 onClick={() => setOpenService(openService === service.id ? null : service.id)}
-                className="w-full flex items-center justify-between p-6 text-left transition-colors hover:bg-secondary/50"
+                className="cursor-pointer w-full flex items-center justify-between p-6 text-left transition-colors hover:bg-secondary/50"
               >
                 <h3 className="text-xl font-semibold">{service.title}</h3>
                 <ChevronDown

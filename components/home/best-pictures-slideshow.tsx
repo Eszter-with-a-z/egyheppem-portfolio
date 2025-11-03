@@ -90,19 +90,19 @@ export function BestPictureSlideshow() {
         <button
           onClick={handlePrevious}
           className=
-          {scrolled ?" opacity-100 duration-700 ease-in-out absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
+          {scrolled ?"cursor-pointer opacity-100 duration-700 ease-in-out absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
           aria-label="Previous image"
         >
-          <ChevronLeft color="white" size={24} />
+          <ChevronLeft color="white" size={36} />
         </button>
         <button
           onClick={handleNext}
           className=
-          {scrolled ?" opacity-100 duration-700 ease-in-out absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
+          {scrolled ?"cursor-pointer opacity-100 duration-700 ease-in-out absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
 
           aria-label="Next image"
         >
-          <ChevronRight color="white" size={24} />
+          <ChevronRight color="white" size={36} />
         </button>
         
         {/* Little dots*/}
