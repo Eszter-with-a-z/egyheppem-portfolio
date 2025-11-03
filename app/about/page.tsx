@@ -69,13 +69,6 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
-
-          <div className="mt-8 pt-8 border-t border-border">
-            <Button size="lg" className="w-full sm:w-auto">
-              <Mail className="mr-2" size={20} />
-              Get in Touch
-            </Button>
-          </div>
         </div>
       </div>
     </main>
