@@ -75,8 +75,9 @@ export function BestPictureSlideshow() {
                ))}
               {/* Overlay that fades away on scroll */}
               <div
-                className={`absolute inset-0 transition-colors duration-700 ease-in-out
-                  ${scrolled ? "bg-black/0" : "bg-black/30"}`}
+                className={`absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/10 transition-opacity duration-700 ease-in-out ${
+                  scrolled ? "opacity-0" : "opacity-100"
+                }`}
               />
             </div>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
@@ -86,7 +87,8 @@ export function BestPictureSlideshow() {
             </div>
           
         </div>
-      
+
+        {/* Left Button */}
         <button
           onClick={handlePrevious}
           className=
@@ -95,6 +97,8 @@ export function BestPictureSlideshow() {
         >
           <ChevronLeft color="white" size={36} />
         </button>
+
+        {/* Right Button */}
         <button
           onClick={handleNext}
           className=
@@ -115,7 +119,7 @@ export function BestPictureSlideshow() {
                 setIsAutoPlaying(false)
               }}
               className={`w-2 h-2 rounded-full transition-all ${
-                index === currentIndex ? "bg-primary w-8" : "bg-white/50"
+                index === currentIndex ? "bg-accent w-8" : "bg-white/50"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

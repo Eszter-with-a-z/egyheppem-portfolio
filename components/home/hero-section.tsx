@@ -32,7 +32,7 @@ export function HeroSection() {
 
   return (
     <section className="relative  min-h-screen flex items-center justify-center ">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
+      <div className="absolute inset-0 " />
       <div className="relative z-4 text-center max-w-4xl mx-auto"> 
         <Title/>        
       </div>
