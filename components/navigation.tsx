@@ -20,16 +20,16 @@ export function Navigation() {
   }, [])
 
   const links = [
-    { href: "/", label: "Home" },
-    { href: "/best-pictures", label: "Best Pictures" },
-    { href: "/projects", label: "Projects" },
-    { href: "/testimonials", label: "Testimonials" },
-    { href: "/about", label: "About & Contact" },
+    { href: "/", label: "Kedőlap" },
+    { href: "/best-pictures", label: "Kedvenc képeim" },
+    { href: "/projects", label: "Projektjeim" },
+    { href: "/testimonials", label: "Mások mondták" },
+    { href: "/about", label: "Rólam & Kontakt" },
   ]
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-5 transition-all duration-300 backdrop-blur-lg`}
+      className={`fixed top-0 left-0 right-0 z-5 transition-all duration-300 `}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -37,7 +37,7 @@ export function Navigation() {
             <ProfilePicture size={30}/>
             <div
                 className="rounded-full px-3 py-1 m-1  shadow-lg
-                  bg-teal-400  rounded-full rounded-tl-md "
+                  bg-teal-400  rounded-full rounded-tl-xs "
              >
                  <p className="text-base font-light">
                     egyheppem
@@ -52,7 +52,7 @@ export function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm bg-white py-2 px-4 rounded-full font-medium transition-colors hover:text-primary ${
+                className={`text-sm bg-white py-2 px-4 rounded-full font-medium transition-colors hover:text-white hover:bg-black shadow-lg ${
                   pathname === link.href ? "text-primary" : "text-muted-foreground"
                 }`}
               >
@@ -64,15 +64,15 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="cursor-pointer md:hidden p-2 hover:bg-secondary rounded-lg transition-colors"
+            className="cursor-pointer  backdrop-blur-md p-1 rounded-full md:hidden p-2 hover:bg-teal-400 rounded-lg transition-colors"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X color="white"size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 animate-fade-in">
+          <div className="md:hidden py-4 ml-8 animate-fade-in bg-teal-400 py-2 px-4 rounded-3xl rounded-tl-xs shadow-lg">
             {links.map((link) => (
               <Link
                 key={link.href}
