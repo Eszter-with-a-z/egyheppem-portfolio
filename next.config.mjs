@@ -9,7 +9,7 @@ const nextConfig = {
   basePath: isProd ? '/egyheppem-portfolio' : '',
 
   // Prefix all static asset URLs with the same path
-  assetPrefix: isProd ? '/egyheppem-portfolio/' : '',
+  assetPrefix: isProd ? '/egyheppem-portfolio/public' : '',
 
   // Avoid image optimization (since we’re fully static)
   images: {
