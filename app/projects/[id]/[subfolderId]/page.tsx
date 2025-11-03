@@ -5,7 +5,7 @@ export function generateStaticParams() {
   const params: { id: string; subfolderId: string }[] = []
 
   projects.forEach((project) => {
-    if (project.hasSubfolders && project.subfolders) {
+    if (project.subfolderCount && project.subfolders) {
       project.subfolders.forEach((subfolder) => {
         params.push({
           id: project.id,

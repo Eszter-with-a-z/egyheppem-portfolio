@@ -18,6 +18,7 @@ export function ProjectsSection() {
               year={project.year}
               title={project.title}
               imageCount={project.imageCount}
+              subfolderCount={project.subfolderCount}
               coverImage={project.coverImage}
               href={`/projects/${project.id}`}
             />

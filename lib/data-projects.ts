@@ -6,7 +6,7 @@ export interface Project {
   imageCount: number
   coverImage: string
   description: string
-  hasSubfolders?: boolean
+  subfolderCount?: number
   subfolders?: Subfolder[]
   images?: string[]
 }
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     imageCount: 24,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-0/nap-0-10.jpg`,
     description: "xxx",
-    hasSubfolders: true,
+    subfolderCount: 2,
     subfolders: [
       {
         id: "nap-0",
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_4.jpg`,
     // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
     description: "xxx", //REPLACE WITH any short desciption you want on your page
-    hasSubfolders: true,
+    subfolderCount: 2,
     subfolders: [
       // Subfolder Template - copy-paste if needed 
       {

@@ -8,13 +8,15 @@ interface ProjectCardProps {
   id: string
   title: string
   year:number
-  imageCount: number
+  imageCount?: number
+  subfolderCount?: number
   coverImage: string
   href: string
 }
 
-export function ProjectCard({ id, title, year, imageCount, coverImage, href }: ProjectCardProps) {
+export function ProjectCard({ id, title, year, imageCount, subfolderCount, coverImage, href }: ProjectCardProps) {
   return (
+    
     <Link
       href={href}
       className="group relative overflow-hidden rounded-lg bg-card transition-all duration-300 hover:scale-[1.02] hover:shadow-xl animate-scale-in"
@@ -33,7 +35,13 @@ export function ProjectCard({ id, title, year, imageCount, coverImage, href }: P
           <Folder size={16} className="text-primary" />
           <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">{title}</h3>
         </div>
-        <p className="text-sm text-muted-foreground">{imageCount} images | {year}</p>
+        <p className="text-sm text-muted-foreground">
+          {subfolderCount !== undefined ? 
+            `${subfolderCount} mappa `
+            :`${imageCount} kép `} 
+            | {year}
+           
+        </p>
         
       </div>
     </Link>
