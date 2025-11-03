@@ -33,8 +33,8 @@ export default function SubfolderPageClient() {
     return (
       <main className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4">Collection Not Found</h1>
-          <Button onClick={() => router.back()}>Go Back</Button>
+          <h1 className="text-4xl font-bold mb-4">Nem található</h1>
+          <Button onClick={() => router.back()}> Vissza</Button>
         </div>
       </main>
     )

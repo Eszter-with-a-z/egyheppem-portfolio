@@ -29,14 +29,16 @@ export default function TestimonialsPage() {
   return (
     <main className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">Testimonials</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">
+          Mások mondták
+        </h1>
 
         {/* Slideshow */}
         <div className="max-w-4xl mx-auto mb-20">
           <div className="relative bg-card rounded-lg p-8 sm:p-12 min-h-[300px] flex items-center">
             <Quote className="absolute top-8 left-8 text-primary/20" size={48} />
 
-            <div className="relative z-10 w-full">
+            <div className="relative w-full">
               <p className="text-xl sm:text-2xl mb-6 leading-relaxed animate-fade-in">
                 {testimonials[currentIndex].text}
               </p>

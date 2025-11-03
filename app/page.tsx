@@ -10,8 +10,7 @@ export default function HomePage() {
       <section className="relative">
         <HeroSection />
         <BestPictureSlideshow />
-      </section>
-      
+      </section>   
       
       <div >
         <ServicesSection />

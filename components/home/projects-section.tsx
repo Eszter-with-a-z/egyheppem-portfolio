@@ -28,7 +28,7 @@ export function ProjectsSection() {
         <div className="text-center">
           <Button asChild size="lg" className="group">
             <Link href="/projects">
-              Welcome to My Project Gallery
+              Projekt Galéria
               <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Link>
           </Button>

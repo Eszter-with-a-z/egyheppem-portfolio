@@ -17,7 +17,7 @@ export default function BestPicturesPage() {
   return (
     <main className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">Best Pictures</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">Kedvenc képeim</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {bestPictures.map((picture, index) => (
@@ -41,7 +41,9 @@ export default function BestPicturesPage() {
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-2">{picture.title}</h3>
                 <Button asChild variant="outline" size="sm" className="w-full bg-transparent">
-                  <Link href={`/projects/${picture.projectId}`}>More About the Project</Link>
+                  <Link href={`/projects/${picture.projectId}`}>
+                    Tovább a projekthez
+                  </Link>
                 </Button>
               </div>
             </div>

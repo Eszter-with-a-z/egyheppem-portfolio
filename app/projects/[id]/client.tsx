@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { useParams, useRouter } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Folder } from "lucide-react"
+import { ArrowLeft, ArrowRight, Folder } from "lucide-react"
 import { projects } from "@/lib/data-projects"
 import { GalleryView } from "@/components/gallery-view"
 import { Button } from "@/components/ui/button"
@@ -49,10 +49,10 @@ export function ProjectPageClient() {
           isSticky ? "fixed top-16 left-0 right-0 bg-transparent  border-border z-40" : "relative"
         } transition-all duration-300`}
       >
-        <div className="container mx-auto  px-4  sm:px-6 lg:px-8 py-4">
-          <Button variant="ghost" onClick={() => router.push("/projects")} className="group  bg-white border-b cursor-pointer">
-            <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
-            Back to Projects
+        <div className="container mx-auto px-4  sm:px-6 lg:px-8 py-4">
+          <Button variant="ghost" onClick={() => router.push("/projects")} className="group  bg-white border-b hover:bg-black cursor-pointer">
+            <ArrowLeft className="hover:text-white mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
+            A projekt galériához
           </Button>
         </div>
       </div>
