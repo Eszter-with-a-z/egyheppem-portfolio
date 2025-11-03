@@ -37,7 +37,7 @@ export function Navigation() {
             <ProfilePicture size={30}/>
             <div
                 className="rounded-full px-3 py-1 m-1  shadow-lg
-                  bg-teal-400  rounded-full rounded-tl-xs "
+                  bg-accent  rounded-full rounded-tl-xs "
              >
                  <p className="text-base font-light">
                     egyheppem
@@ -64,15 +64,15 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="cursor-pointer  backdrop-blur-md p-1 rounded-full md:hidden p-2 hover:bg-teal-400 rounded-lg transition-colors"
+            className="cursor-pointer  bg-white rounded-full md:hidden p-2 hover:bg-accent rounded-lg transition-colors"
           >
-            {isOpen ? <X color="white"size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 ml-8 animate-fade-in bg-teal-400 py-2 px-4 rounded-3xl rounded-tl-xs shadow-lg">
+          <div className="md:hidden py-4 ml-8 animate-fade-in bg-accent py-2 px-4 rounded-3xl rounded-tl-xs shadow-lg">
             {links.map((link) => (
               <Link
                 key={link.href}
