@@ -64,7 +64,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="cursor-pointer  bg-white rounded-full md:hidden p-2 hover:bg-black hover:text-white rounded-lg transition-colors"
+            className="cursor-pointer  bg-white rounded-full md:hidden p-2 hover:bg-black hover:text-accent-foreground rounded-lg transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
