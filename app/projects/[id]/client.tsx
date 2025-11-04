@@ -46,7 +46,7 @@ export function ProjectPageClient() {
     <main className="min-h-screen pt-18 pb-20">
       <div
         className={`${
-          isSticky ? "fixed top-16 left-0 right-0 bg-transparent  border-border z-40" : "relative"
+          isSticky ? "fixed top-16 left-0 right-0 bg-transparent  border-border z-4" : "relative"
         } transition-all duration-300`}
       >
         <div className="container mx-auto px-4  sm:px-6 lg:px-8 py-4">
@@ -131,7 +131,10 @@ export function ProjectPageClient() {
       </div>
 
       {galleryIndex !== null && project.images && (
-        <GalleryView images={project.images} initialIndex={galleryIndex} onClose={() => setGalleryIndex(null)} />
+        <GalleryView 
+        images={project.images} 
+        initialIndex={galleryIndex} 
+        onClose={() => setGalleryIndex(null)} />
       )}
     </main>
   )

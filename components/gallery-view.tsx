@@ -57,14 +57,14 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex bg-black/70 backdrop-blur-lg items-center justify-center glass-bg transition-opacity duration-300 ${
+      className={`fixed inset-0 flex bg-black/70 backdrop-blur-lg items-center justify-center glass-bg transition-opacity duration-300 ${
         isClosing ? "opacity-0" : "opacity-100"
-      }`}
+      } `}
       onClick={handleClose}
     >
       <button
         onClick={handleClose}
-        className="cursor-pointer absolute top-4 left-4 p-4 rounded-full bg-white/10  backdrop-blur-xs hover:bg-black/70 transition-colors z-10"
+        className="mt-12 cursor-pointer absolute top-4 left-4 p-4 rounded-full bg-white/10  backdrop-blur-xs hover:bg-black/70 transition-colors z-10"
         aria-label="Close gallery"
       >
         <X color="white" size={24} />
