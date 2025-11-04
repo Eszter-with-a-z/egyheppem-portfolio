@@ -60,6 +60,7 @@ export function BestPictureSlideshow() {
           className="relative w-screen  mb-8"
           onClick={handleImageClick}
         >
+         {/**Image */}
             <div className="relative w-screen h-screen">
                {bestPictures.map((picture, index) => (
                   <Image
@@ -81,9 +82,10 @@ export function BestPictureSlideshow() {
               />
             </div>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-            <div className=
+            
+            {/* Title */}<div className=
             {scrolled ?" opacity-100 duration-700 ease-in-out absolute bg-transparent bottom-0 left-0 right-0 p-10 bg-black/20":"opacity-0 "} >
-              <h3 className="text-white  text-2xl font-semibold">{bestPictures[currentIndex].title}</h3>
+              <h3 className="text-white drop-shadow text-2xl font-semibold">{bestPictures[currentIndex].title}</h3>
             </div>
           
         </div>
@@ -92,7 +94,7 @@ export function BestPictureSlideshow() {
         <button
           onClick={handlePrevious}
           className=
-          {scrolled ?"cursor-pointer opacity-100 duration-700 ease-in-out absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
+          {scrolled ?"shadow drop-shadow cursor-pointer opacity-100 duration-700 ease-in-out absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-foreground/20  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
           aria-label="Previous image"
         >
           <ChevronLeft color="white" size={36} />
@@ -102,7 +104,7 @@ export function BestPictureSlideshow() {
         <button
           onClick={handleNext}
           className=
-          {scrolled ?"cursor-pointer opacity-100 duration-700 ease-in-out absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
+          {scrolled ?"shadow drop-shadow cursor-pointer opacity-100 duration-700 ease-in-out absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-foreground/20  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
 
           aria-label="Next image"
         >
