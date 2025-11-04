@@ -59,7 +59,7 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
     <div
       className={`fixed inset-0 flex bg-black/70 backdrop-blur-lg items-center justify-center glass-bg transition-opacity duration-300 ${
         isClosing ? "opacity-0" : "opacity-100"
-      } `}
+      } z-[9999]`}
       onClick={handleClose}
     >
       <button

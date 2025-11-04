@@ -75,7 +75,7 @@ export function BestPictureSlideshow() {
                ))}
               {/* Overlay that fades away on scroll */}
               <div
-                className={`absolute inset-0 bg-gradient-to-b from-black/70 via-black/550 to-black/10 transition-opacity duration-700 ease-in-out ${
+                className={`absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/10 transition-opacity duration-700 ease-in-out ${
                   scrolled ? "opacity-0" : "opacity-100"
                 }`}
               />

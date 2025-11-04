@@ -16,8 +16,8 @@ export function HeroSection() {
 
 
   return (
-    <section className="relative  min-h-screen flex items-center justify-center ">
-      <div className="absolute inset-0 " />
+    <section className="relative  min-h-screen bg-transparent flex items-center justify-center ">
+      
       <div className="relative z-4 text-center max-w-4xl mx-auto"> 
         <Title/>        
       </div>
