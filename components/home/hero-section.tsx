@@ -33,7 +33,7 @@ export function HeroSection() {
           : "translate-y-0 opacity-100"}
     `}>
       
-      <div className={` absolute inset-0
+      <div className={` h-0 inset-0
       z-4 text-center max-w-4xl mx-auto 
       transition-all duration-[500ms] e
       ase-in-out
