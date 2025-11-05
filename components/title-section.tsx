@@ -12,7 +12,7 @@ export function Title({color = "white"}:TitleProps) {
         setIsVisible(true)
     }, [])
     return (
-      <div className="mt-6 ">
+      <div className="mt-6">
         <h2
             className={`text-${color} text-5xl text-right sm:text-2xl md:text-3xl font-light mb-4 transition-all duration-1000 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
