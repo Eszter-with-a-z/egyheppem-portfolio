@@ -51,6 +51,17 @@ export function BestPictureSlideshow() {
     }
       
   }
+    // --- NEW: keyboard event listener ---
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (galleryOpen) return // don’t interfere with gallery view
+      if (e.key === "ArrowLeft") handlePrevious()
+      if (e.key === "ArrowRight") handleNext()
+    }
+
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [galleryOpen])
 
   return (
           
