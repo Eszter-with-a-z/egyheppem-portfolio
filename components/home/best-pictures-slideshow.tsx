@@ -1,11 +1,8 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { bestPictures } from "@/lib/data-best-pictures"
-
-
-import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { GalleryView } from "@/components/gallery-view"
 import { Button } from "@/components/ui/button"
@@ -15,6 +12,8 @@ export function BestPictureSlideshow() {
   const [scrolled, setScrolled] = useState(false)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
   const [galleryOpen, setGalleryOpen] = useState(false)
+  const touchStartX = useRef<number | null>(null)
+  const touchEndX = useRef<number | null>(null)
 
   useEffect(() => {
   const handleScroll = () => setScrolled(window.scrollY > 50)
@@ -51,7 +50,7 @@ export function BestPictureSlideshow() {
     }
       
   }
-    // --- NEW: keyboard event listener ---
+    // keyboard event listener 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (galleryOpen) return // don’t interfere with gallery view
@@ -62,6 +61,28 @@ export function BestPictureSlideshow() {
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [galleryOpen])
+
+   // swipe gesture handlers 
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (galleryOpen || touchStartX.current === null) return
+
+    touchEndX.current = e.changedTouches[0].clientX
+    const diff = touchStartX.current - touchEndX.current
+
+    // threshold of 50px for swipe
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) handleNext() // swipe left → next
+      else handlePrevious() // swipe right → previous
+    }
+
+    touchStartX.current = null
+    touchEndX.current = null
+  }
+
 
   return (
           
