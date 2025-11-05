@@ -93,7 +93,7 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
         className="mt-12 cursor-pointer absolute top-4 left-4 p-4 rounded-full bg-white/10  backdrop-blur-xs hover:bg-black/70 transition-colors z-10"
         aria-label="Close gallery"
       >
-        <X color="white" size={24} />
+        <X color="white" className="w-3 h-3 sm:w-6 sm:h-6 md:w-9 md:h-9" />
       </button>
 
       <button
@@ -104,7 +104,7 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
         className="cursor-pointer absolute left-4 p-3 rounded-full bg-white/10 backdrop-blur-lg bg-blur-sm hover:bg-black/70 transition-colors z-10"
         aria-label="Previous image"
       >
-        <ChevronLeft color="white" size={32} />
+        <ChevronLeft color="white" className="w-3 h-3 sm:w-6 sm:h-6 md:w-9 md:h-9" />
       </button>
 
       <button
@@ -115,7 +115,7 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
         className="cursor-pointer absolute right-4 p-3 rounded-full bg-white/10  backdrop-blur-lg bg-blur-sm hover:bg-black/70 transition-colors z-10"
         aria-label="Next image"
       >
-        <ChevronRight color="white" size={32} />
+        <ChevronRight color="white" className="w-3 h-3 sm:w-6 sm:h-6 md:w-9 md:h-9" />
       </button>
 
       <div

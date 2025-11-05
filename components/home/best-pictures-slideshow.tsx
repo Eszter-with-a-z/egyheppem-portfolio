@@ -131,7 +131,7 @@ export function BestPictureSlideshow() {
           {scrolled ?"shadow drop-shadow cursor-pointer opacity-100 duration-700 ease-in-out absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-foreground/20  backdrop-blur-xs hover:bg-white/70  transition-colors":"opacity-0"}
           aria-label="Previous image"
         >
-          <ChevronLeft color="white" size={36} />
+          <ChevronLeft color="white" className="w-3 h-3 sm:w-6 sm:h-6 md:w-9 md:h-9" />
         </button>
 
         {/* Right Button */}
@@ -142,7 +142,7 @@ export function BestPictureSlideshow() {
 
           aria-label="Next image"
         >
-          <ChevronRight color="white" size={36} />
+          <ChevronRight color="white" className="w-3 h-3 sm:w-6 sm:h-6 md:w-9 md:h-9" />
         </button>
         
         {/* Little dots*/}
