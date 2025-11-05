@@ -37,37 +37,35 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <Mail className="text-primary" size={24} />
-              <a href="mailto:hello@kosibazsófia.com" className="text-lg hover:text-primary transition-colors">
-                hello@kosibazsófia.com
-              </a>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <Instagram className="text-primary" size={24} />
-              <a
-                href="https://instagram.com/egyheppem"
+          <div className="space-y-4 flex flex-col gap-1/2 shadow-xl w-content p-4 rounded-lg bg-accent-foreground">
+            <a href="mailto:hello@kosibazsófia.com" className="text-lg hover:text-primary transition-colors">
+              <div className="flex p-3 rounded-lg items-center gap-3 hover:shadow hover:bg-accent">
+                <Mail className="text-primary" size={24} />
+                  hello@kosibazsófia.com
+              </div>
+            </a>
+            <a 
+            href="https://instagram.com/egyheppem"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg hover:text-primary transition-colors"
-              >
-                @egyheppem
-              </a>
-            </div>
+            className="text-lg hover:text-primary transition-colors">
+              <div className="flex p-3 rounded-lg items-center gap-3 hover:shadow hover:bg-accent">
+                <Instagram className="text-primary" size={24} />
+                  @egyheppem
+              </div>
+            </a>
 
-            <div className="flex items-center gap-3">
-              <Facebook className="text-primary" size={24} />
-              <a
-                href="https://www.facebook.com/zsofi.kosiba"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg hover:text-primary transition-colors"
-              >
-                Kosiba Zsófi
-              </a>
-            </div>
+            <a 
+              href="https://www.facebook.com/zsofi.kosiba"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg hover:text-primary transition-colors">
+              <div className="flex p-3 rounded-lg items-center gap-3 hover:shadow hover:bg-accent">
+                <Facebook className="text-primary" size={24} />
+                  Kosiba Zsófi
+              </div>
+            </a>
+
           </div>
         </div>
       </div>
