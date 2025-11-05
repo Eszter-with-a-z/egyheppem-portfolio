@@ -1,5 +1,6 @@
 "use client"
 
+import { createPortal } from "react-dom"
 import { useState, useEffect, useCallback, useRef } from "react"
 import Image from "next/image"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
@@ -16,6 +17,8 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
   const [isClosing, setIsClosing] = useState(false)
   const touchStartX = useRef<number | null>(null)
   const touchEndX = useRef<number | null>(null)
+
+   const [mounted, setMounted] = useState(false)
 
   const handlePrevious = useCallback(() => {
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1))
@@ -79,7 +82,10 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
     touchEndX.current = null
   }
 
-  return (
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) return null
+  return createPortal(
     <div
       className={`fixed inset-0 flex bg-black/70 backdrop-blur-lg items-center justify-center glass-bg transition-opacity duration-300 ${
         isClosing ? "opacity-0" : "opacity-100"
@@ -138,6 +144,7 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-sm text-muted">
         {currentIndex + 1} / {images.length}
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
