@@ -48,9 +48,9 @@ export default function SubfolderPageClient() {
         } transition-all duration-300`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Button variant="ghost" onClick={() => router.push(`/projects/${project.id}`)} className=" bg-white group">
+          <Button variant="ghost" onClick={() => router.push(`/projects/${project.id}`)} className=" bg-white group hover:bg-black cursor-pointer">
             <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
-            Back to {project.title}
+            Vissza ide: {project.title}
           </Button>
         </div>
       </div>

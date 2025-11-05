@@ -40,7 +40,7 @@ export default function BestPicturesPage() {
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-2">{picture.title}</h3>
-                <Button asChild variant="outline" size="sm" className="w-full bg-transparent">
+                <Button asChild variant="outline" size="sm" className="w-full bg-transparent hover:bg-black">
                   <Link href={`/projects/${picture.projectId}`}>
                     Tovább a projekthez
                   </Link>
