@@ -7,7 +7,7 @@ import { ProjectsSection } from "@/components/home/projects-section"
 export default function HomePage() {
   return (
     <main className="min-h-screen">
-      <section className="relative">
+      <section className="relative h-[110vh]">
         <HeroSection />
         <BestPictureSlideshow />
       </section>   
