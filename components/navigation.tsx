@@ -52,7 +52,7 @@ export function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm bg-white py-2 px-4 rounded-full font-medium transition-colors hover:text-white hover:bg-black shadow-lg ${
+                className={`text-sm bg-white py-2 px-4 md:px-2 rounded-full font-medium transition-colors hover:text-white hover:bg-black shadow-lg ${
                   pathname === link.href ? "text-primary" : "text-muted-foreground"
                 }`}
               >
