@@ -86,7 +86,9 @@ export function BestPictureSlideshow() {
 
   return (
           
-    <section className=" sticky  inset-0 w-fill h-screen overflow-hidden">
+    <section className=" sticky  inset-0 w-fill h-screen overflow-hidden"
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}>
       <div className="container  ">
         <div 
           className="relative w-screen  mb-8"
