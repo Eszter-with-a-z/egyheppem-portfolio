@@ -61,9 +61,9 @@ export function BestPictureSlideshow() {
           onClick={handleImageClick}
         >
          {/**Image */}
-          <div className="relative w-screen h-screen">
-            {bestPictures.map((picture, index) => (
-                <Image
+            <div className="relative w-screen h-screen">
+               {bestPictures.map((picture, index) => (
+                  <Image
                   key={index}
                     src={picture.image || "/placeholder.svg"}
                     alt={picture.title}
@@ -83,10 +83,8 @@ export function BestPictureSlideshow() {
             </div>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
             
-            {/* Title */}
-            <div className=
-            {scrolled ?" opacity-100 duration-700 ease-in-out absolute bg-transparent bottom-0 left-0 right-0 p-10 bg-black/20":"opacity-0 "}
-             >
+            {/* Title */}<div className=
+            {scrolled ?" opacity-100 duration-700 ease-in-out absolute bg-transparent bottom-0 left-0 right-0 p-10 bg-black/20":"opacity-0 "} >
               <h3 className="text-white drop-shadow text-2xl font-semibold">{bestPictures[currentIndex].title}</h3>
             </div>
           

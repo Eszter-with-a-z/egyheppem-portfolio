@@ -26,14 +26,19 @@ export function HeroSection() {
 
   return (
     <section className={`
-      relative z-4  min-h-screen bg-transparent flex items-center justify-center transition-all duration-700 ease-in-out
-    ${scrolled
-    ? "translate-y-[-120%] opacity-0"
-    : "translate-y-0 opacity-100"}`
-  }
-  style={{bottom: scrolled ? "auto" : "0", top: scrolled ? "0" : "auto" }}>
+      relative z-5 bg-transparent flex 
+        transition-all duration-[1200ms] ease-in-out]
+        ${scrolled
+          ? "translate-y-[-100px] opacity-0"
+          : "translate-y-0 opacity-100"}
+    `}>
       
-      <div className="absolut z-4 text-center max-w-4xl mx-auto transition-all duration-700 ease-in-out"> 
+      <div className={`
+      z-4 text-center max-w-4xl mx-auto 
+      transition-all duration-[500ms] e
+      ase-in-out
+      ${scrolled ? "translate-y-[-100px]" : "translate-y-[40vh]"}
+      `}> 
         <Title/>        
       </div>
     </section>
