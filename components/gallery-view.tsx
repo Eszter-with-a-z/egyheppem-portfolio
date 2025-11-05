@@ -1,8 +1,9 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useRef } from "react"
 import Image from "next/image"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
+
 
 interface GalleryViewProps {
   images: string[]
@@ -13,6 +14,8 @@ interface GalleryViewProps {
 export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex)
   const [isClosing, setIsClosing] = useState(false)
+  const touchStartX = useRef<number | null>(null)
+  const touchEndX = useRef<number | null>(null)
 
   const handlePrevious = useCallback(() => {
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1))
@@ -55,12 +58,35 @@ export function GalleryView({ images, initialIndex, onClose }: GalleryViewProps)
     }
   }, [handleClose, handlePrevious, handleNext])
 
+  // swipe gesture handlers 
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return
+
+    touchEndX.current = e.changedTouches[0].clientX
+    const diff = touchStartX.current - touchEndX.current
+
+    // threshold of 50px for swipe
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) handleNext() // swipe left → next
+      else handlePrevious() // swipe right → previous
+    }
+
+    touchStartX.current = null
+    touchEndX.current = null
+  }
+
   return (
     <div
       className={`fixed inset-0 flex bg-black/70 backdrop-blur-lg items-center justify-center glass-bg transition-opacity duration-300 ${
         isClosing ? "opacity-0" : "opacity-100"
       } z-[9999]`}
       onClick={handleClose}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
     >
       <button
         onClick={handleClose}

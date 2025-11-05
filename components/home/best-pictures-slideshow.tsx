@@ -50,7 +50,7 @@ export function BestPictureSlideshow() {
     }
       
   }
-    // keyboard event listener 
+  // keyboard event listener 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (galleryOpen) return // don’t interfere with gallery view
