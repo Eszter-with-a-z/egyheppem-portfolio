@@ -8,7 +8,9 @@ export function ProjectsSection() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">Projects</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center animate-fade-in-up">
+          Projektjeim
+        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {projects.slice(0, 6).map((project) => (
