@@ -2,12 +2,10 @@
 
 import { useEffect, useState } from "react"
 import { Title } from "../title-section"
-import Image from "next/image"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
-  const [visibleMessages, setVisibleMessages] = useState(0)
-    const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
     
 
   useEffect(() => {
