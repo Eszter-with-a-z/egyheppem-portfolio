@@ -44,4 +44,5 @@ export const bestPictures: BestPicture[] = [
     image: `${CLOUDINARY_BASE}/bankito/nap-0/nap-0-18.jpg`,
     projectId:`bankito/nap-0`
   },
+  // PASTE THE NEW ENTRY HERE or wherever you want it to be in the order
 ]

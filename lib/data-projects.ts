@@ -18,7 +18,62 @@ export interface Subfolder {
   coverImage: string
   images: string[]
 }
- const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932079/portfolio/projects"
+const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932079/portfolio/projects"
+
+/* Example of project with subfolder
+  {
+    id: "esze-tamas", // REPLACE WITH hyphen-seperated-no-accent-chars-lowercase
+    title: Esze Tamás zenekar a Művészetek Völgyén", //REPLACE WITH any string you want to see on your page
+    year: 2025, //REPLACE WITH number
+    imageCount: 24, //REPLACE WITH number
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_4.jpg`,
+    // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
+    description: "xxx", //REPLACE WITH any short desciption you want on your page
+    subfolderCount: 2,
+    subfolders: [
+      // Subfolder Template - copy-paste if needed 
+      {
+        id: "nap-0", // REPLACE WITH hyphen-seperated-no-accent-chars-lowercase
+        title: "0. nap", //REPLACE WITH any string you want to see on your page
+        imageCount: 12, //REPLACE WITH number
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/example.png`,
+        // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
+        images: Array.from(
+          { length: 12 }, //REPLACE WITH number - same az imageCount
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i+1}.jpg`,
+                    // (1) // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
+                    // (2) Replace the last digits of the file name
+                          // with ${i+1}, if the numbering in File Names starts with 1, 
+                          // and ${i} if it starts with 0
+        ),
+      },
+      // End of Subfolder Template
+      // PASTE YOUR NEW SUBFOLDER HERE
+
+    ],
+  }, 
+  /*end of example of project with subfolder*/
+
+
+/* Example of project with a single folder
+  {
+    id: "esze-tamas-single", // REPLACE WITH hyphen-seperated-no-accent-chars-lowercase
+    title: Esze Tamás zenekar a Művészetek Völgyén egy mappában", //REPLACE WITH any string you want to see on your page
+    year: 2025, //REPLACE WITH number
+    imageCount: 24, //REPLACE WITH number
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/project-name/example.png`,
+        // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
+        images: Array.from(
+          { length: 143 }, //REPLACE WITH number - same az imageCount
+          (_, i) => ``${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i+1}.jpg`,
+                    // (1) ^^^^ REPLACE WITH cloudinary URL of any image from the folder
+                    // (2) Replace the last digits of the file name
+                          //  with ${i+1}, if the numbering in File Names starts with 1, 
+                          // and ${i} if it starts with 0
+                    // (3) add q_auto,f_auto/ between upload/ and v17XX in the URL for faster loading
+        ),
+  },
+End of example of single-folder project*/
 
 export const projects: Project[] = [
     {
@@ -101,57 +156,3 @@ export const projects: Project[] = [
 ] // End of Projects 
 
 
-  /* Example of project with subfolder
-  {
-    id: "esze-tamas", // REPLACE WITH hyphen-seperated-no-accent-chars-lowercase
-    title: Esze Tamás zenekar a Művészetek Völgyén", //REPLACE WITH any string you want to see on your page
-    year: 2025, //REPLACE WITH number
-    imageCount: 24, //REPLACE WITH number
-    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_4.jpg`,
-    // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
-    description: "xxx", //REPLACE WITH any short desciption you want on your page
-    subfolderCount: 2,
-    subfolders: [
-      // Subfolder Template - copy-paste if needed 
-      {
-        id: "nap-0", // REPLACE WITH hyphen-seperated-no-accent-chars-lowercase
-        title: "0. nap", //REPLACE WITH any string you want to see on your page
-        imageCount: 12, //REPLACE WITH number
-        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/example.png`,
-        // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
-        images: Array.from(
-          { length: 12 }, //REPLACE WITH number - same az imageCount
-          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i+1}.jpg`,
-                    // (1) // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
-                    // (2) Replace the last digits of the file name
-                          // with ${i+1}, if the numbering in File Names starts with 1, 
-                          // and ${i} if it starts with 0
-        ),
-      },
-      // End of Subfolder Template
-      // PASTE YOUR NEW SUBFOLDER HERE
-
-    ],
-  }, 
-  /*end of example of project with subfolder*/
-
-
-  /* Example of project with a single folder
-  {
-    id: "esze-tamas-single", // REPLACE WITH hyphen-seperated-no-accent-chars-lowercase
-    title: Esze Tamás zenekar a Művészetek Völgyén egy mappában", //REPLACE WITH any string you want to see on your page
-    year: 2025, //REPLACE WITH number
-    imageCount: 24, //REPLACE WITH number
-    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/project-name/example.png`,
-        // ^^ REPLACE after ${CLOUDINARY_PROJECT_URL_BASE} WITH the end of the cloudinary URL (/project-name/(subfolder-name)/file-name.jpg)
-        images: Array.from(
-          { length: 143 }, //REPLACE WITH number - same az imageCount
-          (_, i) => ``${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i+1}.jpg`,
-                    // (1) ^^^^ REPLACE WITH cloudinary URL of any image from the folder
-                    // (2) Replace the last digits of the file name
-                          //  with ${i+1}, if the numbering in File Names starts with 1, 
-                          // and ${i} if it starts with 0
-                    // (3) add q_auto,f_auto/ between upload/ and v17XX in the URL for faster loading
-        ),
-  },
-  End of example of single-folder project*/
