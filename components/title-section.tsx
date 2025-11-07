@@ -26,7 +26,7 @@ export function Title({color = "white"}:TitleProps) {
               className="rounded-3xl px-6 py-2 m-1  shadow-lg
                 bg-accent text-slate-900  rounded-full  rounded-tr-md mr-0"
             >
-            <p className="lg:text-6xl md:text-6xl text-3xl font-light  mb-4">
+            <p className="lg:text-6xl md:text-6xl text-3xl font-light  mb-1">
               egyheppem
             </p>                 
           </div>

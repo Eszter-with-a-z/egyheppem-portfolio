@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { useParams, useRouter } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, ArrowRight, Folder } from "lucide-react"
+import { ArrowLeft, Folder } from "lucide-react"
 import { projects } from "@/lib/data-projects"
 import { GalleryView } from "@/components/gallery-view"
 import { Button } from "@/components/ui/button"
@@ -102,7 +102,12 @@ export function ProjectPageClient() {
                           {subfolder.title}
                         </h3>
                       </div>
-                      <p className="text-sm text-muted-foreground">{subfolder.imageCount} images</p>
+                      <p className="text-sm text-muted-foreground">
+                          {project.subfolderCount !== undefined ? 
+                          `${project.subfolderCount} mappa `
+                          :`${project.imageCount} kép `} 
+                          | {project.year}
+                      </p>
                     </div>
                   </Link>
                 ))}

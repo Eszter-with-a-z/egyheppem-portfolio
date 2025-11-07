@@ -15,7 +15,7 @@ export function HeroSection() {
   useEffect(() => {
     const handleScroll = () => {
       const y = window.scrollY
-      setScrolled(y > 10)
+      setScrolled(y > 80)
     }
 
     window.addEventListener("scroll", handleScroll)
