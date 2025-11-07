@@ -35,7 +35,10 @@
 0. Bizonyosodj meg afelől, hogy a kép, amit fel akarsz tölteni, a projektek között van (Cloudinary> portfolio/projects/project-name_i.jpg), és másold ki az URL-ját!
 1. Nyisd meg a lib/data-best-pictures.ts fájlt!
 2. Másold ki a kommentekből a sablont, és töltsd ki az utasításoknak megfelelően!
-![best-pictures sablon](image.png)
+
+### Hogy változtassam meg a Szolgáltatásokat?
+1. Nyisd meg a lib/data-services.ts
+2. Kövesd az utasításokat és a sablont a kommentelt szekcióban!
 
 
 | Stage         | Command           | Description                         |

@@ -83,7 +83,7 @@ export const projects: Project[] = [
     imageCount: 24,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-0/nap-0-10.jpg`,
     description: "xxx",
-    subfolderCount: 2,
+    subfolderCount: 4,
     subfolders: [
       {
         id: "nap-0",
