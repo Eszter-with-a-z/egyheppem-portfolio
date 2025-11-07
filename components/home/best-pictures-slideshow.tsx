@@ -16,7 +16,7 @@ export function BestPictureSlideshow() {
   const touchEndX = useRef<number | null>(null)
 
   useEffect(() => {
-  const handleScroll = () => setScrolled(window.scrollY > 500)
+  const handleScroll = () => setScrolled(window.scrollY > 10)
   window.addEventListener("scroll", handleScroll)
   return () => window.removeEventListener("scroll", handleScroll)
   }, [])
