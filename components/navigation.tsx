@@ -23,7 +23,7 @@ export function Navigation() {
     { href: "/", label: "Kedőlap" },
     { href: "/best-pictures", label: "Kedvenc képeim" },
     { href: "/projects", label: "Projektjeim" },
-    { href: "/testimonials", label: "Mások mondták" },
+    /*{ href: "/testimonials", label: "Mások mondták" },*/
     { href: "/about", label: "Rólam & Kontakt" },
   ]
 
