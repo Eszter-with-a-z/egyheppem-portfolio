@@ -1,3 +1,7 @@
+
+
+const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932079/portfolio/projects"
+
 export const services = [
 /* Service Template
   {
@@ -19,16 +23,16 @@ export const services = [
 */
   {
     id: "1",
-    title: "Wedding Photography",
+    title: "fesztivál hupsz",
     description:
       "Comprehensive wedding coverage from preparation to reception, capturing every precious moment of your special day.",
     exampleProjects: [
       {
         id: "wedding-1",
-        title: "Summer Wedding Collection",
+        title: "nyári fesztivál lesgo",
         year: 2025,
         imageCount: 24,
-        image: "/summer-wedding-photography.jpg",
+        image: `${CLOUDINARY_PROJECT_URL_BASE}/bankito/nap-0/nap-0-10.jpg`,
       },
     ],
   },
