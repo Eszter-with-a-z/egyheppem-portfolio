@@ -23,9 +23,9 @@ export const services = [
 */
   {
     id: "1",
-    title: "fesztivál hupsz",
+    title: "események",
     description:
-      "Comprehensive wedding coverage from preparation to reception, capturing every precious moment of your special day.",
+      "Ha éppen szervezel valamit és kell fotós, akkor jó helyen vagy. Lentebb látod, hogy milyen eseményeket fotóztam már: volt fesztivál, mérnökverseny, ELSA summer school, bál. Ha tetszenek a képek, egyértelmű, hogy jó helyen vagy, de rugalmas vagyok, nyitott arra, hogy egyeztessünk arról, milyen hangulatot szeretnél a fotókon, és ehhez igazítom a stílusomat.",
     exampleProjects: [
       {
         id: "wedding-1",
@@ -38,9 +38,9 @@ export const services = [
   },
   {
     id: "2",
-    title: "Portrait Sessions",
+    title: "portré és egyéni fotózás",
     description:
-      "Professional portrait photography for individuals, families, and corporate headshots in studio or outdoor settings.",
+      "Tinderre kellenek képek? Esetleg durran a LinkedIn? Jó, ez nagyon erőltetett szöveg, de a lényeg tényleg az, hogy írj bizalommal, szórakozunk egyet és még jó képeket is kapsz. Csak nyerhetsz.",
     exampleProjects: [
       {
         id: "portraits-1",
@@ -53,9 +53,9 @@ export const services = [
   },
   {
     id: "3",
-    title: "Commercial & Events",
+    title: "koncertek és zenekarok",
     description:
-      "Corporate events, product photography, and commercial projects with professional quality and quick turnaround.",
+      "Kedvenc műfajom a koncertfotózás, szóval ha zenekar vagy, és képekre van szükséged, akkor keress bátran! Akár koncert, akár promóciós fotózásról van szó, szívesen dolgozom veletek. A legtöbb munkám élő koncertfotózás, de itt lent láthtsz példát enteriőr és stúdió fotózásra is.",
     exampleProjects: [
       {
         id: "events-1",
