@@ -38,7 +38,7 @@ export const services = [
   },
   {
     id: "2",
-    title: "Portrait Sessions",
+    title: "portréfotózás",
     description:
       "Professional portrait photography for individuals, families, and corporate headshots in studio or outdoor settings.",
     exampleProjects: [
@@ -53,7 +53,7 @@ export const services = [
   },
   {
     id: "3",
-    title: "Commercial & Events",
+    title: "koncert fotózás",
     description:
       "Corporate events, product photography, and commercial projects with professional quality and quick turnaround.",
     exampleProjects: [
