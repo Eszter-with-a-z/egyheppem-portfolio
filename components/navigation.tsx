@@ -20,7 +20,7 @@ export function Navigation() {
   }, [])
 
   const links = [
-    { href: "/", label: "Kedőlap" },
+    { href: "/", label: "Kezdőlap" },
     { href: "/best-pictures", label: "Kedvenc képeim" },
     { href: "/projects", label: "Projektjeim" },
     /*{ href: "/testimonials", label: "Mások mondták" },*/
