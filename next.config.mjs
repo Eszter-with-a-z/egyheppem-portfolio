@@ -6,10 +6,10 @@ const nextConfig = {
   output: 'export',
 
   // Use repo name as base path on production (GitHub Pages)
-  basePath: isProd ? '/egyheppem-portfolio' : '',
+  basePath: isProd ? '' : '',
 
   // Prefix all static asset URLs with the same path
-  assetPrefix: isProd ? '/egyheppem-portfolio' : '',
+  assetPrefix: isProd ? '' : '',
 
   // Avoid image optimization (since we’re fully static)
   images: {
