@@ -26,7 +26,7 @@ export default function AboutPage() {
 
           <div className="prose prose-invert max-w-none mb-8">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Halihó, egy egyetemista vagyok, aki felfedezte idő közbe, hogy a fotózásnak nagy szerepe kéne, legyen az életében.
+              Halihó, egy egyetemista vagyok, aki felfedezte idő közben, hogy a fotózásnak nagy szerepe kéne, legyen az életében.
               Ha szeretnéd megtudni, hogy miért is fotózok, mi jó benne nekem, olvass tovább (jajj milyen hatásvadász aghhh)
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
