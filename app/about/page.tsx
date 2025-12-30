@@ -30,6 +30,7 @@ export default function AboutPage() {
               Ha szeretnéd megtudni, hogy miért is fotózok, mi jó benne nekem, olvass tovább (jajj milyen hatásvadász aghhh)
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
+              Amit fent láttok chat-et, az egy olyan beszélgetést akar bemutatni, ami egy barátommal folytattam le, amikor elkezdtem a fotós instámat és neveken gondolkotam, egy sokkal hosszabb beszélgetés volt, sokkal több ötlettel, de talán visszaadja, hogy született ez a név. Amúgy az elején viszonylag viccből indítottam el, tudtam, hogy 5 like-om jó, ha lesz. Már többet kapok, amiért nagyon hálás vagyok.
               Szeretek arra figyelni, hogy mi tetszik annak, aki felkér fotózni, megpróbálom azta  stílust visszaadni, nem hiszek abban, hogy elveszne a saját stílusom benne.
               Fotóztam korábban is, egyetemen is, de akkor kezdtem el jobban megismerkedni a a fotózással, amikor az Aurórába kerültem. Bedobtam magam a mélyvízbe, akkor úgy éreztem, hisz egy pince kevés fénnyel és koncertek, amiken nem mindig jó vakuzni.
               Ott úgy éreztem, hogy nagyon szívesen csinálom, külön öröm volt, ahogy mások örültek a képeknek,a mikor megkapták őket, és talán eza  fő számomra továbbra is: egy-egy képnek mennyire tudnak örülni az emberek.
