@@ -26,22 +26,23 @@ export default function AboutPage() {
 
           <div className="prose prose-invert max-w-none mb-8">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              I'm a passionate photographer dedicated to capturing the beauty and emotion in every moment. With years of
-              experience in wedding, portrait, and commercial photography, I bring a unique perspective to every
-              project.
+              Halihó, egy egyetemista vagyok, aki felfedezte idő közbe, hogy a fotózásnak nagy szerepe kéne, legyen az életében.
+              Ha szeretnéd megtudni, hogy miért is fotózok, mi jó benne nekem, olvass tovább (jajj milyen hatásvadász aghhh)
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach combines technical expertise with artistic vision, ensuring that each photograph tells a
-              compelling story. Whether it's the joy of a wedding day, the personality in a portrait, or the elegance of
-              architectural design, I strive to create images that resonate and endure.
+              Szeretek arra figyelni, hogy mi tetszik annak, aki felkér fotózni, megpróbálom azta  stílust visszaadni, nem hiszek abban, hogy elveszne a saját stílusom benne.
+              Fotóztam korábban is, egyetemen is, de akkor kezdtem el jobban megismerkedni a a fotózással, amikor az Aurórába kerültem. Bedobtam magam a mélyvízbe, akkor úgy éreztem, hisz egy pince kevés fénnyel és koncertek, amiken nem mindig jó vakuzni.
+              Ott úgy éreztem, hogy nagyon szívesen csinálom, külön öröm volt, ahogy mások örültek a képeknek,a mikor megkapták őket, és talán eza  fő számomra továbbra is: egy-egy képnek mennyire tudnak örülni az emberek.
+              Én is nagyon tudok örülni, amkikor kapok képet egy-egy eseményről, magamról, barátaimról. 
+              Merem remélni, hogy a fotók relevanciája még nem veszett el.
             </p>
           </div>
 
           <div className="space-y-4 flex flex-col gap-1/2 shadow-xl w-content p-4 rounded-lg bg-accent-foreground">
-            <a href="mailto:hello@kosibazsófia.com" className="text-lg hover:text-primary transition-colors">
+            <a href="mailto:kosibazsofi@gmail.com" className="text-lg hover:text-primary transition-colors">
               <div className="flex p-3 rounded-lg items-center gap-3 hover:shadow hover:bg-accent">
                 <Mail className="text-primary" size={24} />
-                  hello@kosibazsófia.com
+                  kosibazsofi@gmail.com
               </div>
             </a>
             <a 
