@@ -37,8 +37,7 @@ export function Title({color = "white"}:TitleProps) {
           }`}
           style={{ transitionDelay: "500ms" }}
         >
-          vmi egymondatos csoda
-          -- hívj fotózni :)
+          hívj fotózni :)
         </p>
     </div>
 )}
