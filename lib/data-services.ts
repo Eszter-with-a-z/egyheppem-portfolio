@@ -23,9 +23,9 @@ export const services = [
 */
   {
     id: "1",
-    title: "fesztivál hupsz",
+    title: "fesztiválok és rendezvények",
     description:
-      "Comprehensive wedding coverage from preparation to reception, capturing every precious moment of your special day.",
+      "Szeretek embereket fotózni, nem valami fétisként, csupán szépek az emberek, szóval alább látsz szép képeket(elfogult vagyok, tudom) szép emberekről. Legyen az egy fesztivál, egy családi esemény vagy akármi más, ahol emberek vannak és történik valami, hívj bátran fotózni. Szeretem megörökíteni a pillanatokat, az érzelmeket és a hangulatot, ami egy eseményt különlegessé tesz.",
     exampleProjects: [
       {
         id: "wedding-1",
@@ -40,7 +40,7 @@ export const services = [
     id: "2",
     title: "portréfotózás",
     description:
-      "Professional portrait photography for individuals, families, and corporate headshots in studio or outdoor settings.",
+      "Durran a LinkedIn vagy épp a Tinderre kéne egy-két jó fotó magadról? Esetleg más célra? Akármi is legyen, megelőlegezem, hogy egy kellemes időt fogsz velem eltölteni, amíg lövünk rólad pár képet, szóval mindenképp megéri. Írj és keress, addig meg nézz rá pár képre másokról, amiket én csináltam. ",
     exampleProjects: [
       {
         id: "portraits-1",
@@ -53,9 +53,9 @@ export const services = [
   },
   {
     id: "3",
-    title: "koncert fotózás",
+    title: "koncert és banda fotózás",
     description:
-      "Corporate events, product photography, and commercial projects with professional quality and quick turnaround.",
+      "Szerelmem, legjobb dolog a világon. Minden koncert és minden helyszín más. A zenekar tagjai gyönyörűek a színpadon, a közönség is szintúgy lenyűgöző. Hívj fotózni és nem csak a koncert lesz király, hanem az emlékek is róla (micsoda catchy mondat, nem? most álltam vele elő, lol). Találsz képeket zenekarok fotózásáról is, azt is nagyon szeretem, amikor közösen életre hozunk egy ötletet, szóval küldd azt a Pinterest board-ot, ami már rég birizgálja a zenekarod fantáziáját vagy csak válaszolj pár kérdésemre és csinálunk valami jót.",
     exampleProjects: [
       {
         id: "events-1",
