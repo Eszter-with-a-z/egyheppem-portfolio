@@ -30,10 +30,11 @@ export default function AboutPage() {
               Ha szeretnéd megtudni, hogy miért is fotózok, mi jó benne nekem, olvass tovább (jajj milyen hatásvadász aghhh)
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Amit fent láttok chat-et, az egy olyan beszélgetést akar bemutatni, ami egy barátommal folytattam le, amikor elkezdtem a fotós instámat és neveken gondolkotam, egy sokkal hosszabb beszélgetés volt, sokkal több ötlettel, de talán visszaadja, hogy született ez a név. Amúgy az elején viszonylag viccből indítottam el, tudtam, hogy 5 like-om jó, ha lesz. Már többet kapok, amiért nagyon hálás vagyok.
-              Szeretek arra figyelni, hogy mi tetszik annak, aki felkér fotózni, megpróbálom azta  stílust visszaadni, nem hiszek abban, hogy elveszne a saját stílusom benne.
-              Fotóztam korábban is, egyetemen is, de akkor kezdtem el jobban megismerkedni a a fotózással, amikor az Aurórába kerültem. Bedobtam magam a mélyvízbe, akkor úgy éreztem, hisz egy pince kevés fénnyel és koncertek, amiken nem mindig jó vakuzni.
-              Ott úgy éreztem, hogy nagyon szívesen csinálom, külön öröm volt, ahogy mások örültek a képeknek,a mikor megkapták őket, és talán eza  fő számomra továbbra is: egy-egy képnek mennyire tudnak örülni az emberek.
+              Amit fent láttok chat-et, az egy olyan beszélgetést akar bemutatni, amit egy barátommal folytattam le, amikor elkezdtem a fotós instámat és neveken gondolkodtam; egy sokkal hosszabb beszélgetés volt, sokkal több ötlettel, de talán visszaadja, hogy született ez a név, az egyheppem. Amúgy az elején viszonylag viccből indítottam el pl az instám, vagy nem vettem komolyan, ezért is az a profil, ami jelenleg van, rámragadt. Tudtam, hogy 5 like-om jó, ha lesz, így indultam neki. Már többet kapok, amiért nagyon hálás vagyok.
+              <br /><br />
+              Szeretek arra figyelni, hogy mi tetszik annak, aki felkér fotózni, megpróbálom azt a stílust visszaadni, nem hiszek abban, hogy elveszne a saját stílusom benne.
+              Fotóztam korábban is, egyetemen is, de akkor kezdtem el jobban megismerkedni a fotózással, amikor az Aurórába kerültem. Akkor úgy éreztem, hogy bedobtam magam a mélyvízbe: kevés fény, pince, koncert és ne használj vakut; azóta szerelmese vagyok ennek a műfajnak.
+              Ott úgy éreztem, hogy nagyon szívesen csinálom, külön öröm volt, ahogy mások örültek a képeknek, amikor megkapták őket, és talán ez a fő számomra továbbra is: egy-egy képnek mennyire tudnak örülni az emberek.
               Én is nagyon tudok örülni, amkikor kapok képet egy-egy eseményről, magamról, barátaimról. 
               Merem remélni, hogy a fotók relevanciája még nem veszett el.
             </p>
