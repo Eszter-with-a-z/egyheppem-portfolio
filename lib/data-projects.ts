@@ -143,7 +143,7 @@ export const projects: Project[] = [
     id: "schichederek",
     title: "Schichederek az A38-on",
     year: 2025,
-    imageCount: 101,
+    imageCount: 252,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofia_20251005_Schihederek_108.jpg`,
     description: "Nagyon nagy dolog volt nekem fotózni az A38 hajón.Talán nem bölcs ilyen sok elküldött képet kitenni róluk, mert ki nézné végig, de talán segít ez láttatni, hogy nagyjából mennyi képet kap egy zenekar egy konyó után.",
     images: Array.from(
