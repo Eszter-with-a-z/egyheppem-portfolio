@@ -131,7 +131,7 @@ export const projects: Project[] = [
     id: "esze-tamas",
     title: "esze tamás zenekar a Művészetek Völgyén",
     year: 2025,
-    imageCount: 144,
+    imageCount: 206,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/kosibazsofia_muvvolgy_eszetamas_20250718_112.jpg`,
     description: "bolond egy zenekar, tartós emlékek.",
     images: Array.from(
