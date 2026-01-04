@@ -148,7 +148,7 @@ export const projects: Project[] = [
     description: "Nagyon nagy dolog volt nekem fotózni az A38 hajón.",
     images: Array.from(
           { length: 101 },
-          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_${i}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_${i+1}.jpg`,
         ),
   },
   {
