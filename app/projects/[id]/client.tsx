@@ -103,10 +103,11 @@ export function ProjectPageClient() {
                         </h3>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                          {project.subfolderCount !== undefined ? 
-                          `${project.subfolderCount} mappa `
-                          :`${project.imageCount} kép `} 
-                          | {project.year}
+                        {subfolder.subfolderCount !== undefined
+                        ? `${subfolder.subfolderCount} mappa`
+                        : `${subfolder.imageCount} kép`}
+                        {" | "}
+                        {project.year}
                       </p>
                     </div>
                   </Link>
