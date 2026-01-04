@@ -133,7 +133,7 @@ export const projects: Project[] = [
     year: 2025,
     imageCount: 144,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-142.jpg`,
-    description: "Exploring lines, shapes, and light in contemporary architecture.",
+    description: "bolond egy zenekar, tartós emlékek.",
     images: Array.from(
           { length: 143 },
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i}.jpg`,
@@ -145,12 +145,25 @@ export const projects: Project[] = [
     year: 2025,
     imageCount: 101,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_98.jpg`,
-    description: "Exploring lines, shapes, and light in contemporary architecture.",
+    description: "Nagyon nagy dolog volt nekem fotózni az A38 hajón.",
     images: Array.from(
           { length: 101 },
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofi_20251005_Schihederek_${i+1}.jpg`,
         ),
-  },// End of project
+  },
+  {
+    id: "sargahaz",
+    title: "Sárgaház koncert a Balzac nyárzárón",
+    year: 2025,
+    imageCount: 76,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20250829_sargahaz(54).jpg`,
+    description: "Nagyon jó helyszín és hangulat és emberek. A billentyűst ismertem korábbról és hívtam egyszer a srácokat fellépni az Aurórába, ők meg hívtak engem fotózni erre az alkalomra. Nagyon ajánlom a zenéjüket!",
+    images: Array.from(
+          { length: 76 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20250829_sargahaz(${i+1}).jpg`,
+        ),
+  },
+  // End of project
   //PASTE THE NEW PROJECT HERE
 
 ] // End of Projects 
