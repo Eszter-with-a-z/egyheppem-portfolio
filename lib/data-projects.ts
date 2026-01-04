@@ -156,11 +156,11 @@ export const projects: Project[] = [
     title: "Sárgaház koncert a Balzac nyárzárón",
     year: 2025,
     imageCount: 76,
-    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20250829_sargahaz(54).jpg`,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20250829_sargahaz_54.jpg`,
     description: "Nagyon jó helyszín és hangulat és emberek. A billentyűst ismertem korábbról és hívtam egyszer a srácokat fellépni az Aurórába, ők meg hívtak engem fotózni erre az alkalomra. Nagyon ajánlom a zenéjüket!",
     images: Array.from(
           { length: 76 },
-          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20250829_sargahaz(${i+1}).jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20250829_sargahaz_${i+1}.jpg`,
         ),
   },
   // End of project
