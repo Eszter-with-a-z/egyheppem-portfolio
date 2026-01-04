@@ -129,14 +129,14 @@ export const projects: Project[] = [
   }, 
   {
     id: "esze-tamas",
-    title: "Esze Tamás zenekar a Művészetek Völgyén",
+    title: "esze tamás zenekar a Művészetek Völgyén",
     year: 2025,
     imageCount: 144,
-    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-142.jpg`,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/kosibazsofia_muvvolgy_eszetamas_20250718_112.jpg`,
     description: "bolond egy zenekar, tartós emlékek.",
     images: Array.from(
-          { length: 143 },
-          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/muvvolgy_2025_07_18-${i}.jpg`,
+          { length: 206 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/kosibazsofia_muvvolgy_eszetamas_20250718_${i}.jpg`,
         ),
   },
     {
