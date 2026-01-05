@@ -28,7 +28,7 @@ export const services = [
       "Szeretek embereket fotózni, nem valami fétisként, csupán szépek az emberek, szóval alább látsz szép képeket(elfogult vagyok, tudom) szép emberekről. Legyen az egy fesztivál, egy családi esemény vagy akármi más, ahol emberek vannak és történik valami, hívj bátran fotózni. Szeretem megörökíteni a pillanatokat, az érzelmeket és a hangulatot, ami egy eseményt különlegessé tesz.",
     exampleProjects: [
       {
-        id: "wedding-1",
+        id: "bankito",
         title: "nyári fesztivál lesgo",
         year: 2025,
         imageCount: 24,

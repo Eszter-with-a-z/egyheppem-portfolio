@@ -14,9 +14,10 @@ export interface Project {
 export interface Subfolder {
   id: string
   title: string
-  imageCount: number
+  imageCount?: number
   coverImage: string
-  images: string[]
+  images?: string[]
+  subfolderCount?: number
 }
 const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/da5o0fitn/image/upload/q_auto,f_auto/v1761932079/portfolio/projects"
 
