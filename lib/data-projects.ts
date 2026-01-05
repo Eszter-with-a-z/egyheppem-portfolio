@@ -168,11 +168,11 @@ export const projects: Project[] = [
     title: "Hipnózia koncert a kelenvölgyi közösségi háznál",
     year: 2025,
     imageCount: 121,
-    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20251004_hipnózia_36.jpg`,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20251004_hipnozia_36.jpg`,
     description: "Nagyon szeretem a lányokat fotózni, csoda zenekar, csoda zenékkel.",
     images: Array.from(
           { length: 121 },
-          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20251004_hipnózia_${i+1}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20251004_hipnozia_${i+1}.jpg`,
         ),
   },
   // End of project
