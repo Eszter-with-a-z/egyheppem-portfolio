@@ -172,7 +172,7 @@ export const projects: Project[] = [
     description: "Nagyon szeretem a lányokat fotózni, csoda zenekar, csoda zenékkel.",
     images: Array.from(
           { length: 121 },
-          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20251004_hipnozia_${i+1}.jpg`,
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/hipnozia-20251004/kosibazsofia_20251004_hipnozia_${i+1}.jpg`,
         ),
   },
   // End of project
