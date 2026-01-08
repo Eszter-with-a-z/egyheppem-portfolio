@@ -44,11 +44,11 @@ export const services = [
       "Durran a LinkedIn vagy épp a Tinderre kéne egy-két jó fotó magadról? Esetleg más célra? Akármi is legyen, megelőlegezem, hogy egy kellemes időt fogsz velem eltölteni, amíg lövünk rólad pár képet, szóval mindenképp megéri. Írj és keress, addig meg nézz rá pár képre másokról, amiket én csináltam. ",
     exampleProjects: [
       {
-        id: "portraits-1",
-        title: "nyugi, nemsoká nézegethetsz itt is képeket, még work in progress a weboldal :D",
+        id: "portrait-sessions",
+        title: "portré szessönök gyűjteménye (amúgy fr tudok nomrálisan is magyarul ((haha)))",
         year: 2025,
-        imageCount: 15,
-        image: "/professional-portrait.png",
+        imageCount: 42,
+        image: `${CLOUDINARY_PROJECT_URL_BASE}/portrait-sessions/kosibazsofia_portaisession_5.jpg`,
       },
     ],
   },
