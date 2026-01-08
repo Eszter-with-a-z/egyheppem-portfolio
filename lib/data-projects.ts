@@ -176,6 +176,18 @@ export const projects: Project[] = [
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/hipnozia-20251004/kosibazsofia_20251004_hipnozia_${i+1}.jpg`,
         ),
   },
+  {
+    id: "portrait-sessions",
+    title: "portré fotózás bemutatására szolgáló mappa (mondtam, hogy tudok magyarul)",
+    year: 2025,
+    imageCount: 42,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/portrait-sessions/kosibazsofia_portaisession_5.jpg`,
+    description: "sok nevetéssel zajló fotózások eredményei, hol barátaimmal, hol ismeretlenekkel.",
+    images: Array.from(
+          { length: 42 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/portrait-sessions/kosibazsofia_portaisession_${i+1}.jpg`,
+        ),
+  },
   // End of project
   //PASTE THE NEW PROJECT HERE
 
