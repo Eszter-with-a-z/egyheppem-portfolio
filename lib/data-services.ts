@@ -45,7 +45,7 @@ export const services = [
     exampleProjects: [
       {
         id: "portrait-sessions",
-        title: "portré szessönök gyűjteménye (amúgy fr tudok nomrálisan is magyarul ((haha)))",
+        title: "portré szessönök gyűjteménye (amúgy fr tudok normálisan is magyarul ((haha)))",
         year: 2025,
         imageCount: 42,
         image: `${CLOUDINARY_PROJECT_URL_BASE}/portrait-sessions/kosibazsofia_portaisession_5.jpg`,
