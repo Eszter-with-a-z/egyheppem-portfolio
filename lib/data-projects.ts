@@ -142,7 +142,7 @@ export const projects: Project[] = [
   },
     {
     id: "schichederek",
-    title: "Schichederek az A38-on",
+    title: "Schihederek az A38-on",
     year: 2025,
     imageCount: 252,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofia_20251005_Schihederek_108.jpg`,
