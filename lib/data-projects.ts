@@ -241,7 +241,7 @@ export const projects: Project[] = [
     id: "2025-best-mernokverseny",
     title: "BEST mérnökverseny 2025 március",
     year: 2025,
-    imageCount: 302,
+    imageCount: 223,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-best-mernokverseny/nap-2/kosibazsofia_20250307_bestmernokverseny_116.jpg`,
     description: "BEST mérnökverseny 2025 március - a BME I épületében",
     subfolderCount: 2,
