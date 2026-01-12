@@ -259,10 +259,10 @@ export const projects: Project[] = [
       {
         id: "nap-2",
         title: "2. nap",
-        imageCount: 219,
+        imageCount: 140,
         coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-best-mernokverseny/nap-2/kosibazsofia_20250307_bestmernokverseny_100.jpg`,
         images: Array.from(
-          { length: 219 },
+          { length: 140 },
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-best-mernokverseny/nap-2/kosibazsofia_20250307_bestmernokverseny_${i + 1}.jpg`,
         ),
       },
