@@ -76,7 +76,14 @@ const CLOUDINARY_PROJECT_URL_BASE = "https://res.cloudinary.com/da5o0fitn/image/
   },
 End of example of single-folder project*/
 
+
+///*****************************************************/
+/////////////
+///PROJECTS LIST KEZDŐDIK
 export const projects: Project[] = [
+  //////////////
+  ///BÁNKITÓ KEZDŐDIK
+  //////////////
     {
     id: "bankito",
     title: "Bánkitó",
@@ -128,6 +135,13 @@ export const projects: Project[] = [
       },
     ],
   }, 
+  //////////////
+  ///BÁNKITÓ VÉGE
+  //////////////
+  ///*****************************************************/
+  //////////////
+  ///ESZE TAMÁS KEZDŐDIK
+  //////////////
   {
     id: "esze-tamas",
     title: "esze tamás zenekar a Művészetek Völgyén",
@@ -140,6 +154,13 @@ export const projects: Project[] = [
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/esze-tamas/kosibazsofia_muvvolgy_eszetamas_20250718_${i}.jpg`,
         ),
   },
+  //////////////
+  ///ESZE TAMÁS VÉGE
+  //////////////
+  ///*****************************************************/
+  /////////////
+  ///SCHIHEDEREK KEZDŐDIK
+  /////////////
     {
     id: "schichederek",
     title: "Schihederek az A38-on",
@@ -152,6 +173,13 @@ export const projects: Project[] = [
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/schichederek/kosibazsofia_20251005_Schihederek_${i+1}.jpg`,
         ),
   },
+  //////////////
+  ///SCHIHEDEREK VÉGE
+  //////////////
+  ///*****************************************************/
+  /////////////
+  ///SÁRGAHÁZ KEZDŐDIK
+  /////////////
   {
     id: "sargahaz",
     title: "Sárgaház koncert a Balzac nyárzárón",
@@ -164,6 +192,13 @@ export const projects: Project[] = [
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20250829_sargahaz_${i+1}.jpg`,
         ),
   },
+  //////////////
+  ///SÁRGAHÁZ VÉGE
+  ////////////// 
+  ///*****************************************************/
+  /////////////
+  ///HIPNÓZIA KEZDŐDIK
+  /////////////
   {
     id: "hipnozia-20251004",
     title: "Hipnózia koncert a kelenvölgyi közösségi háznál",
@@ -176,6 +211,13 @@ export const projects: Project[] = [
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/hipnozia-20251004/kosibazsofia_20251004_hipnozia_${i+1}.jpg`,
         ),
   },
+  //////////////
+  ///HIPNÓZIA VÉGE
+  //////////////
+  ///*****************************************************/
+  /////////////
+  ///PORTRÉ SESSIONS KEZDŐDIK
+  /////////////
   {
     id: "portrait-sessions",
     title: "portré fotózás bemutatására szolgáló mappa (mondtam, hogy tudok magyarul)",
@@ -188,6 +230,49 @@ export const projects: Project[] = [
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/portrait-sessions/kosibazsofia_portaisessions_${i+1}.jpg`,
         ),
   },
+  //////////////
+  ///PORTRÉ SESSIONS VÉGE
+  //////////////
+  ///*****************************************************/
+  /////////////
+  ///BEST MÉRNÖKVERSENY KEZDŐDIK
+  ///////////
+  {
+    id: "2025-best-mernokverseny",
+    title: "BEST mérnökverseny 2025 március",
+    year: 2025,
+    imageCount: 302,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-best-mernokverseny/nap-2/kosibazsofia_20250307_bestmernokverseny_116.jpg`,
+    description: "BEST mérnökverseny 2025 március - a BME I épületében",
+    subfolderCount: 2,
+    subfolders: [
+      {
+        id: "nap-1",
+        title: "1. nap",
+        imageCount: 83,
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-best-mernokverseny/nap-1/kosibazsofia_20250306_bestmernokverseny_64.jpg`,
+        images: Array.from(
+          { length: 83 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-best-mernokverseny/nap-1/kosibazsofia_20250306_bestmernokverseny_${i + 1}.jpg`,
+        ),
+      },
+      {
+        id: "nap-2",
+        title: "2. nap",
+        imageCount: 219,
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-best-mernokverseny/nap-2/kosibazsofia_20250307_bestmernokverseny_100.jpg`,
+        images: Array.from(
+          { length: 219 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-best-mernokverseny/nap-2/kosibazsofia_20250307_bestmernokverseny_${i + 1}.jpg`,
+        ),
+      },
+      
+    ],
+  }, 
+  //////////////
+  ///BEST MÉRNÖKVERSENY VÉGE
+  //////////////
+  ///*****************************************************/
   // End of project
   //PASTE THE NEW PROJECT HERE
 
