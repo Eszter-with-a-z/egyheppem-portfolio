@@ -56,7 +56,7 @@ export const services = [
     id: "3",
     title: "koncert és banda fotózás",
     description:
-      "Szerelmem, legjobb dolog a világon. Minden koncert és minden helyszín más. A zenekar tagjai gyönyörűek a színpadon, a közönség is szintúgy lenyűgöző. Hívj fotózni és nem csak a koncert lesz király, hanem az emlékek is róla (micsoda catchy mondat, nem? most álltam vele elő, lol). Találsz képeket zenekarok fotózásáról is, azt is nagyon szeretem, amikor közösen életre hozunk egy ötletet, szóval küldd azt a Pinterest board-ot, ami már rég birizgálja a zenekarod fantáziáját vagy csak válaszolj pár kérdésemre és csinálunk valami jót.",
+      "Szerelmem, legjobb dolog a világon. Minden koncert és minden helyszín más. A zenekar tagjai gyönyörűek a színpadon, a közönség is szintúgy lenyűgöző. Hívj fotózni és nem csak a koncert lesz király, hanem az emlékek is róla (micsoda catchy mondat, nem? most álltam vele elő, lol). Találsz képeket zenekarok fotózásáról is, azt is nagyon szeretem, amikor közösen életre hozunk egy ötletet, szóval küldd azt a Pinterest board-ot, ami már rég birizgálja a zenekarod fantáziáját vagy csak válaszolj pár kérdésemre és csinálunk valami jót. (Több képet a projekteknél találsz)",
     exampleProjects: [
       {
         id: "banda-fotozas",
@@ -66,11 +66,11 @@ export const services = [
         image: `${CLOUDINARY_PROJECT_URL_BASE}/banda-fotozas/kosibazsofia_banda_fotozasok_6.jpg`,
       },
       {
-        id: "sargahaz",
-        title: "Sárgaház koncert a Balzac nyárzárón",
+        id: "koncert-portfolio",
+        title: "pár koncertfotó gyűjteménye",
         year: 2025,
-        imageCount: 76,
-        image: `${CLOUDINARY_PROJECT_URL_BASE}/sargahaz/kosibazsofia_20250829_sargahaz_54.jpg`,
+        imageCount: 99,
+        image: `${CLOUDINARY_PROJECT_URL_BASE}/koncert-portfolio/kosibazsofia_koncert_portfolio_71.jpg`,
       },
     ],
   },
