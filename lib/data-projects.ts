@@ -254,6 +254,25 @@ export const projects: Project[] = [
   //////////////
   ///*****************************************************/
   /////////////
+  ///KONCERT PORTFÓLIÓ KEZDŐDIK
+  /////////////
+  {
+    id: "koncert-portfolio",
+    title: "pár koncertfotó gyűjteménye",
+    year: 2025,
+    imageCount: 18,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/banda-fotozas/kosibazsofia_banda_fotozasok_6.jpg`,
+    description: "A következő képeken az Karak! zenekar, Schihederek zenekar és esze tamás zenekar látható. A stúdióban készült képek Keöves Péterrel való együttműködés eredménye.",
+    images: Array.from(
+          { length: 18 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/banda-fotozas/kosibazsofia_banda_fotozasok_${i+1}.jpg`,
+        ),
+  },
+  //////////////
+  ///BANDA FOTÓZÁS VÉGE
+  //////////////
+  ///*****************************************************/
+  /////////////
   ///BEST MÉRNÖKVERSENY KEZDŐDIK
   ///////////
   {
