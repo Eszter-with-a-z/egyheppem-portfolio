@@ -280,7 +280,7 @@ export const projects: Project[] = [
     id: "2025-sels-budapest",
     title: "2025 Summer ELSA Law School Budapest - SELS",
     year: 2025,
-    imageCount: 468,
+    imageCount: 387,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/6-szombat/kosibazsofia_20250823_sels_113.jpg`,
     description: "1 hetes nemzetközi jogi tábor előadásokkal, gálával és evezéssel Csepelen(ide tervezek betenni emoji-t, csak még nem jöttem rá, hogy kell pontosan a snippeteket használni hihi).",
     subfolderCount: 6,
@@ -295,12 +295,12 @@ export const projects: Project[] = [
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/1-vasarnap/kosibazsofia_20250817_sels_${i + 1}.jpg`,
         ),
       },
-      {
+      /*{
         id: "2-hetfo",
         title: "hétfő - fejlesztés alatt",
         imageCount: 81,
         coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/2-hetfo/megnyito/kosibazsofia_20250818_sels_14.jpg`,
-        subfolderCount: 2,
+        subfolderCount: 2,*/
         /*subfolders: [
           {
             id: "megnyito",
@@ -323,7 +323,7 @@ export const projects: Project[] = [
             ),
           },
         ],*/
-      },
+      //},
       {
         id: "3-kedd",
         title: "kedd",
