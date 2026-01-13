@@ -59,11 +59,11 @@ export const services = [
       "Szerelmem, legjobb dolog a világon. Minden koncert és minden helyszín más. A zenekar tagjai gyönyörűek a színpadon, a közönség is szintúgy lenyűgöző. Hívj fotózni és nem csak a koncert lesz király, hanem az emlékek is róla (micsoda catchy mondat, nem? most álltam vele elő, lol). Találsz képeket zenekarok fotózásáról is, azt is nagyon szeretem, amikor közösen életre hozunk egy ötletet, szóval küldd azt a Pinterest board-ot, ami már rég birizgálja a zenekarod fantáziáját vagy csak válaszolj pár kérdésemre és csinálunk valami jót.",
     exampleProjects: [
       {
-        id: "hipnozia-20251004",
-        title: "Hipnózia koncert a kelenvölgyi közösségi háznál",
+        id: "banda-fotozas",
+        title: "példák banda fotózásra",
         year: 2025,
-        imageCount: 121,
-        image: `${CLOUDINARY_PROJECT_URL_BASE}/hipnozia-20251004/kosibazsofia_20251004_hipnozia_36.jpg`,
+        imageCount: 18,
+        image: `${CLOUDINARY_PROJECT_URL_BASE}/banda-fotozas/kosibazsofia_banda_fotozasok_6.jpg`,
       },
       {
         id: "sargahaz",
