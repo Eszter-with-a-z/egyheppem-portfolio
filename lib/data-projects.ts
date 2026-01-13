@@ -262,7 +262,7 @@ export const projects: Project[] = [
     year: 2025,
     imageCount: 99,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/koncert-portfolio/kosibazsofia_koncert_portfolio_71.jpg`,
-    description: "A projektek között találhatsz még képeket koncertfotózásról, de ide gyűjtöttem párat. A képeken különböző zenekarokat láthatsz, különböző helyszíneken, különböző stílusban: Arcosok Klubja, Temesi Blanka, Schihederek, Karak!, TELEHOLD, Pavilon, Lekvárherceg és a Pontoon hajón egy kellemes kis zenés esti progiról pár kép. Vegyesen 2024-es és 2025-ös képek.",
+    description: "A projektek között találhatsz még képeket koncertfotózásról, de ide gyűjtöttem párat. A képeken különböző zenekarokat láthatsz, különböző helyszíneken, különböző stílusban. A teljesség igénye nélkül: Arcosok Klubja, Temesi Blanka, Schihederek, Karak!, TELEHOLD, Pavilon, Lekvárherceg, Sárgaház, This Must Be Love. Vegyesen 2024-es és 2025-ös képek.",
     images: Array.from(
           { length: 99 },
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/koncert-portfolio/kosibazsofia_koncert_portfolio_${i+1}.jpg`,
