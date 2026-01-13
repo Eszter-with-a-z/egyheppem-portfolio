@@ -1,3 +1,4 @@
+import { Noto_Emoji } from "next/font/google"
 
 export interface Project {
   id: string
@@ -269,7 +270,104 @@ export const projects: Project[] = [
         ),
   },
   //////////////
-  ///BANDA FOTÓZÁS VÉGE
+  ///KONCERT PORTFÓLIÓ VÉGE
+  //////////////
+  ///*****************************************************/
+  /////////////
+  ///2025 SELS KEZDŐDIK
+  ///////////
+  {
+    id: "2025-sels-budapest",
+    title: "2025 Summer ELSA Law School Budapest - SELS",
+    year: 2025,
+    imageCount: 468,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/6-szombat/kosibazsofia_20250823_sels_113.jpg`,
+    description: "1 hetes nemzetközi jogi tábor előadásokkal, gálával és evezéssel Csepelen(ide tervezek betenni emoji-t, csak még nem jöttem rá, hogy kell pontosan a snippeteket használni hihi).",
+    subfolderCount: 6,
+    subfolders: [
+      {
+        id: "1-vasarnap",
+        title: "vasárnap",
+        imageCount: 26,
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/1-vasarnap/kosibazsofia_20250817_sels_2.jpg`,
+        images: Array.from(
+          { length: 26 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/1-vasarnap/kosibazsofia_20250817_sels_${i + 1}.jpg`,
+        ),
+      },
+      {
+        id: "2-hetfo",
+        title: "hétfő - fejlesztés alatt",
+        imageCount: 81,
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/2-hetfo/megnyito/kosibazsofia_20250818_sels_14.jpg`,
+        subfolderCount: 2,
+        /*subfolders: [
+          {
+            id: "megnyito",
+            title: "megnyitó ceremónia és előadások", 
+            imageCount: 70,
+            coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/2-hetfo/elso-resz/kosibazsofia_20250720_sels_hetfo_elso_resz_35.jpg`,
+            images: Array.from(
+              { length: 70 },
+              (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/2-hetfo/elso-resz/kosibazsofia_20250720_sels_hetfo_elso_resz_${i + 1}.jpg`,
+            ),
+          },
+          {
+            id: "vacsora",
+            title: "vacsora néptánc bemutatóval",
+            imageCount: 70,
+            coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/2-hetfo/masodik-resz/kosibazsofia_20250720_sels_hetfo_masodik_resz_40.jpg`,
+            images: Array.from(
+              { length: 70 },
+              (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/2-hetfo/masodik-resz/kosibazsofia_20250720_sels_hetfo_masodik_resz_${i + 1}.jpg`,
+            ),
+          },
+        ],*/
+      },
+      {
+        id: "3-kedd",
+        title: "kedd",
+        imageCount: 26,
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/3-kedd/kosibazsofia_20250819_sels_9.jpg`,
+        images: Array.from(
+          { length: 26 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/3-kedd/kosibazsofia_20250819_sels_${i + 1}.jpg`,
+        ),
+      },
+      {
+        id: "4-szerda",
+        title: "szerda",
+        imageCount: 65,
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/4-szerda/kosibazsofia_20250820_sels_33.jpg`,
+        images: Array.from(
+          { length: 65 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/4-szerda/kosibazsofia_20250820_sels_${i + 1}.jpg`,
+        ),
+      },
+      {
+        id: "5-pentek",
+        title: "péntek",
+        imageCount: 24,
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/5-pentek/kosibazsofia_20250822_sels_1.jpg`,
+        images: Array.from(
+          { length: 24 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/5-pentek/kosibazsofia_20250822_sels_${i + 1}.jpg`,
+        ),
+      },
+      {
+        id: "6-szombat",
+        title: "szombat",
+        imageCount: 246,
+        coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/6-szombat/kosibazsofia_20250823_sels_236.jpg`,
+        images: Array.from(
+          { length: 246 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/2025-sels-budapest/6-szombat/kosibazsofia_20250823_sels_${i + 1}.jpg`,
+        ),
+      },
+    ],
+  }, 
+  //////////////
+  ///2025 SELS VÉGE
   //////////////
   ///*****************************************************/
   /////////////
