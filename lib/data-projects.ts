@@ -243,10 +243,29 @@ export const projects: Project[] = [
     year: 2025,
     imageCount: 18,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/banda-fotozas/kosibazsofia_banda_fotozasok_6.jpg`,
-    description: "A következő képeken az Karak! zenekar, Schihederek zenekar és esze tamás zenekar látható. A stúdióban készült képek elkészítése Keöves Péterrel való együttműködés eredménye.",
+    description: "A következő képeken az Karak! zenekar, Schihederek zenekar és esze tamás zenekar látható. A stúdióban készült képek Keöves Péterrel való együttműködés eredménye.",
     images: Array.from(
           { length: 18 },
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/banda-fotozas/kosibazsofia_banda_fotozasok_${i+1}.jpg`,
+        ),
+  },
+  //////////////
+  ///BANDA FOTÓZÁS VÉGE
+  //////////////
+  ///*****************************************************/
+  /////////////
+  ///KONCERT PORTFÓLIÓ KEZDŐDIK
+  /////////////
+  {
+    id: "koncert-portfolio",
+    title: "pár koncertfotó gyűjteménye",
+    year: 2025,
+    imageCount: 99,
+    coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/koncert-portfolio/kosibazsofia_koncert_portfolio_71.jpg`,
+    description: "A projektek között találhatsz még képeket koncertfotózásról, de ide gyűjtöttem párat. A képeken különböző zenekarokat láthatsz, különböző helyszíneken, különböző stílusban: Arcosok Klubja, Temesi Blanka, Schihederek, Karak!, TELEHOLD, Pavilon, Lekvárherceg és a Pontoon hajón egy kellemes kis zenés esti progiról pár kép. Vegyesen 2024-es és 2025-ös képek.",
+    images: Array.from(
+          { length: 99 },
+          (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/koncert-portfolio/kosibazsofia_koncert_portfolio_${i+1}.jpg`,
         ),
   },
   //////////////
