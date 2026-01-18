@@ -244,7 +244,7 @@ export const projects: Project[] = [
     year: 2025,
     imageCount: 88,
     coverImage: `${CLOUDINARY_PROJECT_URL_BASE}/20250808-karak/kosibazsofia_20250808_karak_marczi_15.jpg`,
-    description: "Zseniális heyszín, zseniális zenekar. Miután lement a másik zenekar is aznap este, a fényképezőgéppel és a laptopommal a táskámban elfutottunk Enikő barátnőmmel a Déli pályaudvarra, hogy elérjük a vonatát. Szeeretem az ilyen rnadom dolgokat, amik egy fotózással összekapcsolódnak.",
+    description: "Zseniális heyszín, zseniális zenekar. Aztán lement a másik zenekar is aznap este, a fényképezőgéppel és a laptopommal a táskámban elfutottunk Enikő barátnőmmel a Déli pályaudvarra, hogy elérjük a vonatát: mindent azért, hogy barátnőim jönnek koncertekre, ahol fotózom.",
     images: Array.from(
           { length: 88 },
           (_, i) => `${CLOUDINARY_PROJECT_URL_BASE}/20250808-karak/kosibazsofia_20250808_karak_marczi_${i+1}.jpg`,
